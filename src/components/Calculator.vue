@@ -111,7 +111,7 @@
     </div>
     
     <div id="items-wrapper">
-      <div class="item" v-for="(item,itemId) in items" v-bind:key="item.id" v-bind:class="{ 'disabled': isDirty && !item.isCraftable, 'craftable': item.isCraftable, 'hidden': hideDisabled && !item.isCraftable}">
+      <div class="item" v-for="(item,itemId) in items" v-bind:key="itemId" v-bind:class="{ 'disabled': isDirty && !item.isCraftable, 'craftable': item.isCraftable, 'hidden': hideDisabled && !item.isCraftable}">
         <img v-bind:src="getIconFromId(itemId)" />
       </div>
     </div>
@@ -120,7 +120,7 @@
 </template>
 
 <script>
-
+import Vue from 'vue';
 export default {
 
   name: 'Calculator',
@@ -175,18 +175,26 @@ export default {
       let currentId = id.toString().padStart(3, '0');
       return './collectibles/collectibles_'+currentId+'.png/'
     },
+
     computeItems(){
-      
-      for(var j = 0; j<this.localRecipes.length; j++){
+
+      for(let j = 0; j<this.localRecipes.length; j++){
         let isCraftable = false;
-        let recipe = this.localRecipes[j].recipes;
-        for(var k = 0; k<recipe.length; k++){
-          let currentRecipe = recipe[k];
-          if(this.checkIfRecipeDoable(currentRecipe)){
-            isCraftable = true;
+        let that = this;
+        if(that.localRecipes[j] && that.localRecipes[j].recipes){
+          let recipe = this.localRecipes[j].recipes;
+          
+          for(let k = 0; k<recipe.length; k++){
+            let currentRecipe = recipe[k];
+            if(this.checkIfRecipeDoable(currentRecipe)){
+              isCraftable = true;
+            }
           }
+          
+          Vue.nextTick(function () {
+            Vue.set(that.items[that.localRecipes[j]['ID']], 'isCraftable',isCraftable);
+          })
         }
-        this.items[this.localRecipes[j].ID].isCraftable = isCraftable;
  
       }
       this.updateCraftableState();
@@ -205,7 +213,7 @@ export default {
         this.countOccurences(recipe, 9) <= this.pennyNumber &&
         this.countOccurences(recipe, 10) <= this.dimeNumber &&
         this.countOccurences(recipe, 11) <= this.luckyCoinNumber &&
-        this.countOccurences(recipe, 12) <= this.keyNumber &&
+        this.countOccurences(recipe, 12) <= this.keyNumber  &&
         this.countOccurences(recipe, 13) <= this.goldkeyNumber &&
         this.countOccurences(recipe, 14) <= this.chargedKeyNumber &&
         this.countOccurences(recipe, 15) <= this.bombNumber &&
@@ -231,8 +239,6 @@ export default {
     },
 
     updateCraftableState(){
-      console.log("update craftable state");
-      console.log(this, parseInt(this.cardNumber));
       if(
       parseInt(this.heartNumber) == 0&&
       
@@ -249,20 +255,18 @@ export default {
       parseInt(this.keyNumber) == 0 &&
       parseInt(this.goldkeyNumber) == 0 &&
       parseInt(this.chargedKeyNumber) == 0 &&
-      //parseInt(this.bombNumber) == 0 &&
+      parseInt(this.bombNumber) == 0 &&
       parseInt(this.goldbombNumber) == 0 &&
-      //parseInt(this.bigbombNumber) == 0 &&
+      parseInt(this.bigbombNumber) == 0 &&
       parseInt(this.tinybatteryNumber) == 0 &&
       parseInt(this.batteryNumber) == 0 &&
       parseInt(this.cardNumber) == 0 &&
       parseInt(this.pillNumber) == 0 &&
       parseInt(this.runeNumber) == 0
       ){
-        console.log("le false");
         this.isDirty = false;
       }
       else{
-        console.log("le true");
         this.isDirty = true;
       }
     }

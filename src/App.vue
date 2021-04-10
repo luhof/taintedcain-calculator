@@ -1,11 +1,19 @@
 <template>
   <div id="app">
     <Calculator msg="Welcome to Your Vue.js App"/>
-    <p style="margin : 30px;">
+    <p style="margin : 30px; line-height:1.5rem;">
     Made by luhof (<a href="https://lucas.cool" target="_blank">Website</a> | <a href="https://twitter.com/luhof" target="_blank">Twitter</a>).<br/>
     Item data stolen from the <a href="https://github.com/Rchardon/RebirthItemTracker" target="_blank">Rebirth item tracker</a> and recipes from the <a href="https://bindingofisaacrebirth.fandom.com/wiki/Bag_of_Crafting_(Recipes)" target="_blank">wiki</a><br/>
-    Want to thank me? Go play my game <a href="https://luhof.itch.io/niock-niock" target="_blank">NIOCK-NIOCK</a> :)<br/>
+    Want to thank me? Go play my game <a href="https://luhof.itch.io/niock-niock" target="_blank">NIOCK-NIOCK</a> :)
     </p>
+    <p style="margin : 30px; line-height:1.5rem;">
+    TODO : <br/>
+    - usage of stylesheet icons for better performance<br/>
+    - basic search feature<br/>
+    - recipes display on hover<br/>
+    - "plan to craft" mode<br/>
+    </p>
+    
   </div>
   
 </template>
