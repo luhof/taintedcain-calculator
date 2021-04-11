@@ -4,7 +4,7 @@
     <div id="input-wrapper">
       <div class="input-group">
         <div class="input-pickup">
-          <img class="pickup" src="icons/Red_heart.png"/>
+          <img class="pickup" src="icons/Red_Heart.png"/>
           <input type="number" min="0" max="99" class="input-pickup-number" v-model="heartNumber" @change="computeItems()"/>
         </div>
         <div class="input-pickup">
@@ -28,7 +28,7 @@
           <input type="number" min="0" max="99" class="input-pickup-number" v-model="goldenheartNumber" @change="computeItems()"/>
         </div>
         <div class="input-pickup">
-          <img class="pickup" src="icons/Bone_Heart.png"/>
+          <img class="pickup" src="icons/Bone_heart.png"/>
           <input type="number" min="0" max="99" class="input-pickup-number" v-model="skullheartNumber" @change="computeItems()"/>
         </div>
         <div class="input-pickup">
@@ -79,6 +79,10 @@
           <img class="pickup" src="icons/Golden_Bomb.png"/>
           <input type="number" min="0" max="99" class="input-pickup-number" v-model="goldbombNumber" @change="computeItems()"/>
         </div>
+        <div class="input-pickup">
+          <img class="pickup" src="icons/Giga_Bomb.png"/>
+          <input type="number" min="0" max="99" class="input-pickup-number" v-model="bigbombNumber" @change="computeItems()"/>
+        </div>
       </div>
       <div class="input-group">
         <div class="input-pickup">
@@ -88,6 +92,10 @@
         <div class="input-pickup">
           <img class="pickup" src="icons/Battery.png"/>
           <input type="number" min="0" max="99" class="input-pickup-number" v-model="batteryNumber" @change="computeItems()"/>
+        </div>
+        <div class="input-pickup">
+          <img class="pickup" src="icons/Mega_Battery.png"/>
+          <input type="number" min="0" max="99" class="input-pickup-number" v-model="megabatteryNumber" @change="computeItems()"/>
         </div>
       </div>
       <div class="input-group">
@@ -102,6 +110,16 @@
         <div class="input-pickup">
           <img class="pickup" src="icons/Rune1.png"/>
           <input type="number" min="0" max="99" class="input-pickup-number" v-model="runeNumber" @change="computeItems()"/>
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="input-pickup">
+          <img class="pickup" src="icons/Pickup_Dice_Shard_icon.png"/>
+          <input type="number" min="0" max="99" class="input-pickup-number" v-model="crackeddiceNumber" @change="computeItems()"/>
+        </div>
+        <div class="input-pickup">
+          <img class="pickup" src="icons/Pickup_Cracked_Key_icon.png"/>
+          <input type="number" min="0" max="99" class="input-pickup-number" v-model="crackedkeyNumber" @change="computeItems()"/>
         </div>
       </div>
     </div>
@@ -170,9 +188,12 @@ export default {
       bigbombNumber:0, //17
       tinybatteryNumber:0, //18
       batteryNumber:0, //19
+      megabatteryNumber:0, //20
       cardNumber: 0,//21
       pillNumber:0, //22
-      runeNumber:0 //23
+      runeNumber:0, //23
+      crackeddiceNumber:0, //24
+      crackedkeyNumber:0 //25
 
     }
   },
@@ -189,11 +210,11 @@ export default {
   methods: {
     getIconFromId(id){
       let currentId = id.toString().padStart(3, '0');
-      return './collectibles/collectibles_'+currentId+'.png/'
+      return './collectibles/collectibles_'+currentId+'.png'
     },
     getIconFromPickupId(pickupId){
       if(pickupId)
-       return './bagicons/'+pickupId+'.png/';
+       return './bagicons/'+pickupId+'.png';
     },
     getRecipesFromId(id){
       let recipeItem = this.localRecipes.find(recipe => recipe['ID'] == id);
@@ -212,9 +233,15 @@ export default {
           
           for(let k = 0; k<recipe.length; k++){
             let currentRecipe = recipe[k];
+            let recipeCraftable=false;
             if(this.checkIfRecipeDoable(currentRecipe)){
-              that.localRecipes[j].recipes[k].isCraftable = true;
-              isCraftable = true;
+              recipeCraftable=true;
+            }
+            Vue.nextTick(function () {
+              Vue.set(that.localRecipes[j].recipes[k], 'isCraftable',recipeCraftable);
+            });
+            if(!isCraftable){
+              isCraftable = recipeCraftable;
             }
           }
           
@@ -248,9 +275,12 @@ export default {
         this.countOccurences(recipe, 17) <= this.bigbombNumber &&
         this.countOccurences(recipe, 18) <= this.tinybatteryNumber &&
         this.countOccurences(recipe, 19) <= this.batteryNumber &&
+        this.countOccurences(recipe, 20) <= this.megabatteryNumber &&
         this.countOccurences(recipe, 21) <= this.cardNumber &&
         this.countOccurences(recipe, 22) <= this.pillNumber &&
-        this.countOccurences(recipe, 23) <= this.runeNumber
+        this.countOccurences(recipe, 23) <= this.runeNumber &&
+        this.countOccurences(recipe, 24) <= this.crackeddiceNumber &&
+        this.countOccurences(recipe, 25) <= this.crackedkeyNumber
       ){
         return true;
       }
@@ -283,13 +313,17 @@ export default {
       parseInt(this.goldkeyNumber) == 0 &&
       parseInt(this.chargedKeyNumber) == 0 &&
       parseInt(this.bombNumber) == 0 &&
+      parseInt(this.bigbombNumber) == 0 &&
       parseInt(this.goldbombNumber) == 0 &&
       parseInt(this.bigbombNumber) == 0 &&
       parseInt(this.tinybatteryNumber) == 0 &&
       parseInt(this.batteryNumber) == 0 &&
+      parseInt(this.megabatteryNumber) == 0 &&
       parseInt(this.cardNumber) == 0 &&
       parseInt(this.pillNumber) == 0 &&
-      parseInt(this.runeNumber) == 0
+      parseInt(this.runeNumber) == 0 &&
+      parseInt(this.crackeddiceNumber) == 0 &&
+      parseInt(this.crackedkeyNumber) == 0
       ){
         this.isDirty = false;
       }
@@ -377,7 +411,7 @@ li {
 #options{
   display:flex;
   max-width:80%;
-  margin:auto;
+  margin:10px auto;
 }
 
 #items-wrapper{
