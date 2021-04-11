@@ -305,7 +305,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #hello{
-  max-width: 960px;
   margin : auto;
 }
 ul {
@@ -356,11 +355,14 @@ li {
   border-bottom : solid 1px #3a322b;
 }
 
+
 #input-wrapper{
  display:flex;
  align-items:center;
  justify-content: center;
  flex-wrap:wrap;
+ max-width:960px;
+ margin:auto;
 }
 
 #input-wrapper span{
@@ -374,6 +376,8 @@ li {
 
 #options{
   display:flex;
+  max-width:80%;
+  margin:auto;
 }
 
 #items-wrapper{
@@ -384,6 +388,8 @@ li {
   border-radius : 20px;
   transition : all 0.5s;
   min-height:10px;
+  max-width:80%;
+  margin:auto;
 }
 .item{
   transition : all 0.3s ease-in-out;
