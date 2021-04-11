@@ -8,7 +8,7 @@
     </p>
     <p style="margin : 30px; line-height:1.5rem;">
     TODO : <br/>
-    - usage of stylesheet icons for better performance<br/>
+    - usage of spritesheed icons for better performance<br/>
     - optimization for better performance because ugh it's so sluggish it could use a few "speed up" pills<br/>
     - basic search feature<br/>
     - "plan to craft" mode<br/>
