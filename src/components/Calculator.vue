@@ -112,7 +112,23 @@
     
     <div id="items-wrapper">
       <div class="item" v-for="(item,itemId) in items" v-bind:key="itemId" v-bind:class="{ 'disabled': isDirty && !item.isCraftable, 'craftable': item.isCraftable, 'hidden': hideDisabled && !item.isCraftable}">
-        <img v-bind:src="getIconFromId(itemId)" />
+        <img class="item-img" v-bind:src="getIconFromId(itemId)" />
+        <div class="recipes-modal">
+          <div class="recipes-desc">
+            <b>{{item.name}}</b><br/>
+            <p style="font-size:0.6rem;padding:5px;">{{item.text}}</p>
+
+          </div>
+          <div class="recipes-block" v-for="(recipe, recipeId) in getRecipesFromId(itemId)" v-bind:key="recipeId" v-bind:class="{ 'recipeCraftable':recipe.isCraftable}">
+              <div class="recipe-block" v-for="(singleRecipe, singleRecipeId) in recipe" v-bind:key="singleRecipeId">
+                <img v-bind:src="getIconFromPickupId(singleRecipe)"/>
+              </div>
+            
+          </div>
+          <div v-if="!getRecipesFromId(itemId)">
+            No recipe... yet?
+          </div>
+        </div>
       </div>
     </div>
     
@@ -175,6 +191,16 @@ export default {
       let currentId = id.toString().padStart(3, '0');
       return './collectibles/collectibles_'+currentId+'.png/'
     },
+    getIconFromPickupId(pickupId){
+      if(pickupId)
+       return './bagicons/'+pickupId+'.png/';
+    },
+    getRecipesFromId(id){
+      let recipeItem = this.localRecipes.find(recipe => recipe['ID'] == id);
+      if(recipeItem)
+      return recipeItem.recipes;
+      else return null;
+    },
 
     computeItems(){
 
@@ -187,6 +213,7 @@ export default {
           for(let k = 0; k<recipe.length; k++){
             let currentRecipe = recipe[k];
             if(this.checkIfRecipeDoable(currentRecipe)){
+              that.localRecipes[j].recipes[k].isCraftable = true;
               isCraftable = true;
             }
           }
@@ -293,18 +320,12 @@ li {
   display:inline-block;
 }
 
-.disabled{
+.item.disabled .item-img{
   opacity:0.2;
-  transform:scale(0.5);
 }
 
 .hidden{
   display:none;
-}
-
-.craftable{
-  transform:scale(1.2);
-
 }
 
 .pickup{
@@ -367,4 +388,48 @@ li {
 .item{
   transition : all 0.3s ease-in-out;
 }
+
+.item:hover .recipes-modal{
+  display:flex;
+  
+}
+.recipes-modal{
+  display:none;
+  pointer-events: none;
+  flex-direction: column;
+  position:absolute;
+  padding : 10px;
+  width:190px;
+  color: #d3bba7;
+  background-color : #3a322b;
+  text-shadow:none;
+  z-index:9999;
+}
+.item-img{
+  z-index:1;
+}
+.recipes-block{
+  width:170px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap:wrap;
+  padding: 10px;
+  border-bottom:solid 1px #444444;
+}
+.recipes-block:last-child{
+  border-bottom:none;
+}
+.recipes-block.recipeCraftable{
+  background-color:lightgreen;
+}
+
+.recipe-block{
+  width : 20px;
+  height:20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 </style>

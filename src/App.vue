@@ -10,7 +10,6 @@
     TODO : <br/>
     - usage of stylesheet icons for better performance<br/>
     - basic search feature<br/>
-    - recipes display on hover<br/>
     - "plan to craft" mode<br/>
     </p>
     
