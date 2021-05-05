@@ -5,7 +5,7 @@
       <div class="input-group" v-for="(group, index) of pickupDefinitions" :key="index">
         <div class="input-pickup" v-for="pickup of group" :key="pickup.index">
           <img class="pickup" :src="`icons/${pickup.icon}`"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="pickups[pickup.index]" @change="computeItems()"/>
+          <input type="number" min="0" max="99" class="input-pickup-number" v-model="pickups[pickup.index]"/>
         </div>
       </div>
     </div>
@@ -14,6 +14,7 @@
         <input type="checkbox" v-model="hideDisabled"/>
         Hide non-craftable items
       </label>
+      <button @click="clear">Clear</button>
       <input placeholder="Search..." v-model="search"/>
     </div>
     <div id="items-wrapper">
@@ -94,6 +95,14 @@ export default {
       ],
     };
   },
+  watch: {
+    pickups: {
+      deep: true,
+      handler() {
+        this.computeItems();
+      }
+    },
+  },
   computed: {
     visibleItems() {
       return Object.fromEntries(Object.entries(this.items).filter(item =>
@@ -103,6 +112,11 @@ export default {
     }
   },
   methods: {
+    clear() {
+      for (let i = 0; i < this.pickups.length; i++) {
+        Vue.set(this.pickups, i, 0);
+      }
+    },
     setHover(itemId, state) {
       Vue.set(this.itemHoverStates, itemId, state);
     },
@@ -171,6 +185,14 @@ export default {
   align-items: center;
   justify-content: center;
   margin: 10px;
+}
+
+button {
+  height: 30px;
+  background-color: #E3D4C2;
+  border: none;
+  border-bottom: solid 1px #3a322b;
+  font-family: inherit;
 }
 
 input[type=text], input[type=number], input:not([type]) {
