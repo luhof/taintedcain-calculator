@@ -9,18 +9,17 @@
         </div>
       </div>
     </div>
-
     <div id="options">
       <label>
         <input type="checkbox" v-model="hideDisabled"/>
         Hide non-craftable items
       </label>
+      <input placeholder="Search..." v-model="search"/>
     </div>
-    
     <div id="items-wrapper">
       <div class="item" v-for="(item,itemId) in visibleItems" v-bind:key="itemId" v-bind:class="{ 'disabled': anyPickups && !item.isCraftable, 'craftable': item.isCraftable}">
         <img class="item-img" v-bind:src="getIconFromId(itemId)" @mouseenter="setHover(itemId, true)" @mouseleave="setHover(itemId, false)"/>
-        <div class="recipes-modal" v-if="itemHoverStates[itemId]">
+        <div class="recipes-modal" v-if="itemHoverStates[itemId]" v-once>
           <div class="recipes-desc">
             <b>{{item.name}}</b><br/>
             <p style="font-size:0.6rem;padding:5px;">{{item.text}}</p>
@@ -42,7 +41,6 @@
 <script>
 import Vue from "vue";
 export default {
-
   name: "Calculator",
   props: {
     msg: String,
@@ -58,6 +56,7 @@ export default {
       hideDisabled: false,
       pickups: new Array(25).fill(0),
       itemHoverStates: [],
+      search: "",
       pickupDefinitions: [[
         { icon: "Red_Heart.png", index: 0 },
         { icon: "Soul_Heart.png", index: 1 },
@@ -97,7 +96,10 @@ export default {
   },
   computed: {
     visibleItems() {
-      return Object.fromEntries(Object.entries(this.items).filter(item => !(this.hideDisabled && !item[1].isCraftable)));
+      return Object.fromEntries(Object.entries(this.items).filter(item =>
+        !(this.hideDisabled && !item[1].isCraftable) && 
+        (!this.search || item[1].name.toLowerCase().includes(this.search.toLowerCase()))
+      ));
     }
   },
   methods: {
@@ -154,7 +156,6 @@ export default {
 </script>
 
 <style scoped>
-
 .item.disabled .item-img {
   opacity: 0.2;
 }
@@ -172,17 +173,20 @@ export default {
   margin: 10px;
 }
 
-.input-pickup-number {
-  text-align: center;
+input[type=text], input[type=number], input:not([type]) {
   height: 30px;
-  width: 100px;
-  margin: 0px 10px;
-  font-family: 'upheaval';
-  font-size: 24px;
   background-color: #E3D4C2;
   border: none;
   padding: 10px;
   border-bottom: solid 1px #3a322b;
+  font-size: 24px;
+}
+
+input.input-pickup-number {
+  width: 100px;
+  margin: 0px 10px;
+  text-align: center;
+  font-family: 'upheaval';
 }
 
 
@@ -196,7 +200,18 @@ export default {
 }
 
 #options {
+  display: flex;
+  flex-flow: column nowrap;
   margin: 10px auto;
+  max-width: 80%;
+}
+
+#options > * {
+  margin: 5px;
+}
+
+input {
+  font: inherit;
 }
 
 #items-wrapper {
