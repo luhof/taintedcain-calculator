@@ -1,147 +1,34 @@
 <template>
-  <div id="hello">
+  <div>
     <h1>Tainted Cain calculator!</h1>
     <div id="input-wrapper">
-      <div class="input-group">
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Red_Heart.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="heartNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Soul_Heart.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="soulheartNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Black_Heart.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="darkheartNumber" @change="computeItems()"/>
-        </div>
-
-      </div>
-
-      <div class="input-group">
-                <div class="input-pickup">
-          <img class="pickup" src="icons/Eternal_Heart.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="eternalheartNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Gold_Heart.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="goldenheartNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Bone_heart.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="skullheartNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Rotten_Heart.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="rottenheartNumber" @change="computeItems()"/>
-        </div>
-      </div>
-
-      <div class="input-group">
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Penny.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="coinNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Nickel.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="pennyNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Dime.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="dimeNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Lucky_Penny.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="luckyCoinNumber" @change="computeItems()"/>
-        </div>
-      </div>
-
-      <div class="input-group">
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Key.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="keyNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Golden_Key.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="goldkeyNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Charged_Key.gif"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="chargedKeyNumber" @change="computeItems()"/>
-        </div>
-      </div>
-      <div class="input-group">
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Bomb.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="bombNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Golden_Bomb.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="goldbombNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Giga_Bomb.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="bigbombNumber" @change="computeItems()"/>
-        </div>
-      </div>
-      <div class="input-group">
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Micro_Battery.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="tinybatteryNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Battery.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="batteryNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Mega_Battery.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="megabatteryNumber" @change="computeItems()"/>
-        </div>
-      </div>
-      <div class="input-group">
-        <div class="input-pickup">
-          <img class="pickup" src="icons/TarotCard.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="cardNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Pill_Black_White.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="pillNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Rune1.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="runeNumber" @change="computeItems()"/>
-        </div>
-      </div>
-      <div class="input-group">
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Pickup_Dice_Shard_icon.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="crackeddiceNumber" @change="computeItems()"/>
-        </div>
-        <div class="input-pickup">
-          <img class="pickup" src="icons/Pickup_Cracked_Key_icon.png"/>
-          <input type="number" min="0" max="99" class="input-pickup-number" v-model="crackedkeyNumber" @change="computeItems()"/>
+      <div class="input-group" v-for="(group, index) of pickupDefinitions" :key="index">
+        <div class="input-pickup" v-for="pickup of group" :key="pickup.index">
+          <img class="pickup" :src="`icons/${pickup.icon}`"/>
+          <input type="number" min="0" max="99" class="input-pickup-number" v-model="pickups[pickup.index]"/>
         </div>
       </div>
     </div>
-
     <div id="options">
-      <input type="checkbox" v-model="hideDisabled"/> Hide not craftable items
+      <label>
+        <input type="checkbox" v-model="hideDisabled"/>
+        Hide non-craftable items
+      </label>
+      <button @click="clear">Clear</button>
+      <input placeholder="Search..." v-model="search"/>
     </div>
-    
     <div id="items-wrapper">
-      <div class="item" v-for="(item,itemId) in items" v-bind:key="itemId" v-bind:class="{ 'disabled': isDirty && !item.isCraftable, 'craftable': item.isCraftable, 'hidden': hideDisabled && !item.isCraftable}">
-        <img class="item-img" v-bind:src="getIconFromId(itemId)" />
-        <div class="recipes-modal">
+      <div class="item" v-for="(item,itemId) in visibleItems" v-bind:key="itemId" v-bind:class="{ 'disabled': anyPickups && !item.isCraftable, 'craftable': item.isCraftable}">
+        <img class="item-img" v-bind:src="getIconFromId(itemId)" @mouseenter="setHover(itemId, true)" @mouseleave="setHover(itemId, false)"/>
+        <div class="recipes-modal" v-if="itemHoverStates[itemId]" v-once>
           <div class="recipes-desc">
             <b>{{item.name}}</b><br/>
             <p style="font-size:0.6rem;padding:5px;">{{item.text}}</p>
-
           </div>
           <div class="recipes-block" v-for="(recipe, recipeId) in getRecipesFromId(itemId)" v-bind:key="recipeId" v-bind:class="{ 'recipeCraftable':recipe.isCraftable}">
               <div class="recipe-block" v-for="(singleRecipe, singleRecipeId) in recipe" v-bind:key="singleRecipeId">
                 <img v-bind:src="getIconFromPickupId(singleRecipe)"/>
               </div>
-            
           </div>
           <div v-if="!getRecipesFromId(itemId)">
             No recipe... yet?
@@ -149,327 +36,249 @@
         </div>
       </div>
     </div>
-    
   </div>
 </template>
 
 <script>
-import Vue from 'vue';
+import Vue from "vue";
 export default {
-
-  name: 'Calculator',
+  name: "Calculator",
   props: {
     msg: String,
   },
   data() {
     return {
-      items: require('../assets/items.json'),
-      activeRecipes: require('../assets/recipes_active_full.json'),
-      passiveRecipes: require('../assets/recipes_passive_full.json'),
-      localRecipes: [],
-      isDirty:false,
+      items: require("../assets/items.json"),
+      recipes: [
+        ...require("../assets/recipes_active_full.json"),
+        ...require("../assets/recipes_passive_full.json"),
+      ],
+      anyPickups: false,
       hideDisabled: false,
-      heartNumber:0, //1
-      soulheartNumber:0, //2
-      darkheartNumber:0, //3
-      eternalheartNumber:0, //4
-      goldenheartNumber:0, //5
-      skullheartNumber:0, //6
-      rottenheartNumber:0, //7
-      coinNumber:0, //8
-      pennyNumber:0, //9
-      dimeNumber:0, //10
-      luckyCoinNumber:0, //11
-      keyNumber:0, //12
-      goldkeyNumber:0, //13
-      chargedKeyNumber:0, //14
-      bombNumber:0, //15
-      goldbombNumber:0, //16
-      bigbombNumber:0, //17
-      tinybatteryNumber:0, //18
-      batteryNumber:0, //19
-      megabatteryNumber:0, //20
-      cardNumber: 0,//21
-      pillNumber:0, //22
-      runeNumber:0, //23
-      crackeddiceNumber:0, //24
-      crackedkeyNumber:0 //25
-
-    }
+      pickups: new Array(25).fill(0),
+      itemHoverStates: [],
+      search: "",
+      pickupDefinitions: [[
+        { icon: "Red_Heart.png", index: 0 },
+        { icon: "Soul_Heart.png", index: 1 },
+        { icon: "Black_Heart.png", index: 2 },
+      ], [
+        { icon: "Eternal_Heart.png", index: 3 },
+        { icon: "Gold_Heart.png", index: 4 },
+        { icon: "Bone_heart.png", index: 5 },
+        { icon: "Rotten_Heart.png", index: 6 },
+      ], [
+        { icon: "Penny.png", index: 7 },
+        { icon: "Nickel.png", index: 8 },
+        { icon: "Dime.png", index: 9 },
+        { icon: "Lucky_Penny.png", index: 10 },
+      ], [
+        { icon: "Key.png", index: 11 },
+        { icon: "Golden_Key.png", index: 12 },
+        { icon: "Charged_Key.gif", index: 13 },
+      ], [
+        { icon: "Bomb.png", index: 14 },
+        { icon: "Golden_Bomb.png", index: 15 },
+        { icon: "Giga_Bomb.png", index: 16 },
+      ], [
+        { icon: "Micro_Battery.png", index: 17 },
+        { icon: "Battery.png", index: 18 },
+        { icon: "Mega_Battery.png", index: 19 },
+      ], [
+        { icon: "TarotCard.png", index: 20 },
+        { icon: "Pill_Black_White.png", index: 21 },
+        { icon: "Rune1.png", index: 22 },
+      ], [
+        { icon: "Pickup_Dice_Shard_icon.png", index: 23 },
+        { icon: "Pickup_Cracked_Key_icon.png", index: 24 },
+      ],
+      ],
+    };
   },
-  mounted() {
-    for(var i in this.activeRecipes){
-          this.localRecipes.push(this.activeRecipes[i]);
+  watch: {
+    pickups: {
+      deep: true,
+      handler() {
+        this.computeItems();
       }
-      for(var i2 in this.passiveRecipes){
-          this.localRecipes.push(this.passiveRecipes[i2]);
-      }
+    },
   },
   computed: {
+    visibleItems() {
+      return Object.fromEntries(Object.entries(this.items).filter(item =>
+        !(this.hideDisabled && !item[1].isCraftable) && 
+        (!this.search || item[1].name.toLowerCase().includes(this.search.toLowerCase()))
+      ));
+    }
   },
   methods: {
-    getIconFromId(id){
-      let currentId = id.toString().padStart(3, '0');
-      return './collectibles/collectibles_'+currentId+'.png'
+    clear() {
+      for (let i = 0; i < this.pickups.length; i++) {
+        Vue.set(this.pickups, i, 0);
+      }
     },
-    getIconFromPickupId(pickupId){
-      if(pickupId)
-       return './bagicons/'+pickupId+'.png';
+    setHover(itemId, state) {
+      Vue.set(this.itemHoverStates, itemId, state);
     },
-    getRecipesFromId(id){
-      let recipeItem = this.localRecipes.find(recipe => recipe['ID'] == id);
-      if(recipeItem)
-      return recipeItem.recipes;
+    getIconFromId(id) {
+      let currentId = id.toString().padStart(3, "0");
+      return `./collectibles/collectibles_${currentId}.png`;
+    },
+    getIconFromPickupId(pickupId) {
+      return `./bagicons/${pickupId}.png`;
+    },
+    getRecipesFromId(id) {
+      let recipeItem = this.recipes.find(recipe => recipe["ID"] == id);
+      if (recipeItem) return recipeItem.recipes;
       else return null;
     },
-
-    computeItems(){
-
-      for(let j = 0; j<this.localRecipes.length; j++){
+    computeItems() {
+      for (let recipeItems of this.recipes) {
         let isCraftable = false;
         let that = this;
-        if(that.localRecipes[j] && that.localRecipes[j].recipes){
-          let recipe = this.localRecipes[j].recipes;
-          
-          for(let k = 0; k<recipe.length; k++){
-            let currentRecipe = recipe[k];
-            let recipeCraftable=false;
-            if(this.checkIfRecipeDoable(currentRecipe)){
-              recipeCraftable=true;
-            }
+        if (recipeItems && recipeItems.recipes) {
+          for (let recipe of recipeItems.recipes) {
+            let recipeCraftable = this.checkIfRecipeDoable(recipe);
+
             Vue.nextTick(function () {
-              Vue.set(that.localRecipes[j].recipes[k], 'isCraftable',recipeCraftable);
+              Vue.set(recipe, "isCraftable", recipeCraftable);
             });
-            if(!isCraftable){
+            if (!isCraftable) {
               isCraftable = recipeCraftable;
             }
           }
-          
-          Vue.nextTick(function () {
-            Vue.set(that.items[that.localRecipes[j]['ID']], 'isCraftable',isCraftable);
-          })
-        }
- 
-      }
-      this.updateCraftableState();
-      
-    },
-    checkIfRecipeDoable(recipe){
-      if(
-        this.countOccurences(recipe, 1) <= this.heartNumber &&
-        this.countOccurences(recipe, 2) <= this.soulheartNumber &&
-        this.countOccurences(recipe, 3) <= this.darkheartNumber &&
-        this.countOccurences(recipe, 4) <= this.eternalheartNumber &&
-        this.countOccurences(recipe, 5) <= this.goldenheartNumber &&
-        this.countOccurences(recipe, 6) <= this.skullheartNumber &&
-        this.countOccurences(recipe, 7) <= this.rottenheartNumber &&
-        this.countOccurences(recipe, 8) <= this.coinNumber &&
-        this.countOccurences(recipe, 9) <= this.pennyNumber &&
-        this.countOccurences(recipe, 10) <= this.dimeNumber &&
-        this.countOccurences(recipe, 11) <= this.luckyCoinNumber &&
-        this.countOccurences(recipe, 12) <= this.keyNumber  &&
-        this.countOccurences(recipe, 13) <= this.goldkeyNumber &&
-        this.countOccurences(recipe, 14) <= this.chargedKeyNumber &&
-        this.countOccurences(recipe, 15) <= this.bombNumber &&
-        this.countOccurences(recipe, 16) <= this.goldbombNumber &&
-        this.countOccurences(recipe, 17) <= this.bigbombNumber &&
-        this.countOccurences(recipe, 18) <= this.tinybatteryNumber &&
-        this.countOccurences(recipe, 19) <= this.batteryNumber &&
-        this.countOccurences(recipe, 20) <= this.megabatteryNumber &&
-        this.countOccurences(recipe, 21) <= this.cardNumber &&
-        this.countOccurences(recipe, 22) <= this.pillNumber &&
-        this.countOccurences(recipe, 23) <= this.runeNumber &&
-        this.countOccurences(recipe, 24) <= this.crackeddiceNumber &&
-        this.countOccurences(recipe, 25) <= this.crackedkeyNumber
-      ){
-        return true;
-      }
-      else return false;
-    },
 
-    countOccurences(array, number){
+          Vue.nextTick(function () {
+            Vue.set(that.items[recipeItems["ID"]], "isCraftable", isCraftable);
+          });
+        }
+      }
+      this.anyPickups = !this.pickups.every(x => x == 0);
+    },
+    checkIfRecipeDoable(recipe) {
+      return this.pickups.every((count, index) => count >= this.countOccurences(recipe, index+1));
+    },
+    countOccurences(array, value) {
       let num = 0;
-      for(var i = 0; i<array.length; i++){
-        if(parseInt(array[i])==number) num++;
+      for (let element of array) {
+        if (parseInt(element) == value) num++;
       }
       return num;
     },
-
-    updateCraftableState(){
-      if(
-      parseInt(this.heartNumber) == 0&&
-      
-      parseInt(this.soulheartNumber) == 0 &&
-      parseInt(this.darkheartNumber) == 0 &&
-      parseInt(this.eternalheartNumber) == 0 &&
-      parseInt(this.goldenheartNumber) == 0 &&
-      parseInt(this.skullheartNumber) == 0 &&
-      parseInt(this.rottenheartNumber) == 0 &&
-      parseInt(this.coinNumber) == 0 &&
-      parseInt(this.pennyNumber) == 0 &&
-      parseInt(this.dimeNumber) == 0 &&
-      parseInt(this.luckyCoinNumber) == 0 &&
-      parseInt(this.keyNumber) == 0 &&
-      parseInt(this.goldkeyNumber) == 0 &&
-      parseInt(this.chargedKeyNumber) == 0 &&
-      parseInt(this.bombNumber) == 0 &&
-      parseInt(this.bigbombNumber) == 0 &&
-      parseInt(this.goldbombNumber) == 0 &&
-      parseInt(this.bigbombNumber) == 0 &&
-      parseInt(this.tinybatteryNumber) == 0 &&
-      parseInt(this.batteryNumber) == 0 &&
-      parseInt(this.megabatteryNumber) == 0 &&
-      parseInt(this.cardNumber) == 0 &&
-      parseInt(this.pillNumber) == 0 &&
-      parseInt(this.runeNumber) == 0 &&
-      parseInt(this.crackeddiceNumber) == 0 &&
-      parseInt(this.crackedkeyNumber) == 0
-      ){
-        this.isDirty = false;
-      }
-      else{
-        this.isDirty = true;
-      }
-    }
-      
   }
-}
+};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#hello{
-  margin : auto;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-.input-group{
-  display:inline-block;
+.item.disabled .item-img {
+  opacity: 0.2;
 }
 
-.item.disabled .item-img{
-  opacity:0.2;
-}
-
-.hidden{
-  display:none;
-}
-
-.pickup{
-  transform:scale(2);
-  margin-right:20px;
+.pickup {
+  transform: scale(2);
+  margin-right: 20px;
   image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
 }
-.input-pickup{
-  display:flex;
+
+.input-pickup {
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin:10px;
+  margin: 10px;
 }
 
-.input-pickup-number{
-  text-align:center;
-  height:30px;
-  width:100px;
-  margin:0px 10px;
+button {
+  height: 30px;
+  background-color: #E3D4C2;
+  border: none;
+  border-bottom: solid 1px #3a322b;
+  font-family: inherit;
+}
+
+input[type=text], input[type=number], input:not([type]) {
+  height: 30px;
+  background-color: #E3D4C2;
+  border: none;
+  padding: 10px;
+  border-bottom: solid 1px #3a322b;
+  font-size: 24px;
+}
+
+input.input-pickup-number {
+  width: 100px;
+  margin: 0px 10px;
+  text-align: center;
   font-family: 'upheaval';
-  display:inline-block;
-  font-size:24px;
-  background-color:rgba(255, 255, 255, 0.2);
-  border:none;
-  padding : 10px;
-  border-bottom : solid 1px #3a322b;
 }
 
 
-#input-wrapper{
- display:flex;
- align-items:center;
- justify-content: center;
- flex-wrap:wrap;
- max-width:960px;
- margin:auto;
+#input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: auto;
 }
 
-#input-wrapper span{
-  font-family: 'silom';
-  display:inline-block;
-  font-size:24px;
-  background-color : rgba(0,0,0,0.1);
-  border-radius:5px;
-  padding : 10px;
+#options {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 10px auto;
+  max-width: 80%;
 }
 
-#options{
-  display:flex;
-  max-width:80%;
-  margin:10px auto;
+#options > * {
+  margin: 5px;
 }
 
-#items-wrapper{
-  display:flex;
-  flex-wrap:wrap;
-  margin-top : 20px;
-  background-color:rgba(0,0,0,0.1);
-  border-radius : 20px;
-  transition : all 0.5s;
-  min-height:10px;
-  max-width:80%;
-  margin:auto;
-}
-.item{
-  transition : all 0.3s ease-in-out;
+input {
+  font: inherit;
 }
 
-.item:hover .recipes-modal{
-  display:flex;
-  
+#items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  background-color: #C6B5A1;
+  border-radius: 20px;
+  min-height: 10px;
+  max-width: 80%;
+  margin: auto;
 }
-.recipes-modal{
-  display:none;
-  pointer-events: none;
-  flex-direction: column;
-  position:absolute;
-  padding : 10px;
-  width:190px;
+
+.recipes-modal {
+  position: absolute;
+  padding: 10px;
+  max-width: 190px;
   color: #d3bba7;
   background-color : #3a322b;
-  text-shadow:none;
-  z-index:9999;
+  text-shadow: none;
+  z-index: 9999;
 }
-.item-img{
-  z-index:1;
-}
-.recipes-block{
-  width:170px;
-  display:flex;
+
+.recipes-block {
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   padding: 10px;
-  border-bottom:solid 1px #444444;
-}
-.recipes-block:last-child{
-  border-bottom:none;
-}
-.recipes-block.recipeCraftable{
-  background-color:lightgreen;
+  border-bottom: solid 1px #444444;
 }
 
-.recipe-block{
-  width : 20px;
-  height:20px;
-  display:flex;
+.recipes-block:last-child {
+  border-bottom: none;
+}
+
+.recipes-block.recipeCraftable {
+  background-color: lightgreen;
+}
+
+.recipe-block {
+  width: 20px;
+  height: 20px;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-
 </style>
