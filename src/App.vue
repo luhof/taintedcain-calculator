@@ -7,10 +7,12 @@
     Want to thank me? Go play my game <a href="https://luhof.itch.io/niock-niock" target="_blank">NIOCK-NIOCK</a> :)
     </p>
     <p style="margin : 30px; line-height:1.5rem;">
+    Refactor, optimization and search filter by <a href="https://github.com/adroslice" target="_blank">Adroslice</a>! 1000000 thanks!<br/>
+    </p>
+    <p style="margin : 30px; line-height:1.5rem;">
     TODO : <br/>
     - usage of spritesheet icons for better performance<br/>
-    - optimization for better performance because ugh it's so sluggish it could use a few "speed up" pills<br/>
-    - basic search feature<br/>
+    - try to dynamically compute doable recipes (check here) instead of using hard-coded arrays.
     - "plan to craft" mode<br/>
     </p>
     
