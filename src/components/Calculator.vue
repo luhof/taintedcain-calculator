@@ -21,7 +21,7 @@
     </div>
     <div id="items-wrapper">
       <div class="item" v-for="(item,itemId) in visibleItems" v-bind:key="itemId" v-bind:class="{ 'disabled': anyPickups && !item.isCraftable, 'craftable': item.isCraftable}">
-        <img class="item-img" v-bind:src="getIconFromId(itemId)" @mouseenter="setHover(itemId, true)" @mouseleave="setHover(itemId, false)"/>
+        <div class="bg-collectible" :class="'bg-collectibles_'+itemId" @mouseenter="setHover(itemId, true)" @mouseleave="setHover(itemId, false)"></div>
         <div class="recipes-modal" v-if="itemHoverStates[itemId]" v-once>
           <div class="recipes-desc">
             <b>{{item.name}}</b><br/>
@@ -121,10 +121,6 @@ export default {
     },
     setHover(itemId, state) {
       Vue.set(this.itemHoverStates, itemId, state);
-    },
-    getIconFromId(id) {
-      let currentId = id.toString().padStart(3, "0");
-      return `./collectibles/collectibles_${currentId}.png`;
     },
     getIconFromPickupId(pickupId) {
       return `./bagicons/${pickupId}.png`;

@@ -11,11 +11,8 @@ You manually enter pickups available on your floor and it show items that can be
 - Recipes come from the [Binding of Isaac fandom wiki](https://bindingofisaacrebirth.fandom.com/wiki/Bag_of_Crafting_(Recipes)). I included a crappy handmade JS parser for the HTML tables rendered in the wiki tables in the `taintedcain-parser` folder.
 
 ## TODO
-- basic search
-- list view
-- reset button
-- icons from a spritesheet
-- better performances
+- dynamic recipe generation test?
+- "plan to craft" and "favorite" modes
 
 
 ## Project setup

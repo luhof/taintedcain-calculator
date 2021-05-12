@@ -19,9 +19,8 @@
     </p>
     <p style="margin : 30px; line-height:1.5rem;">
     TODO : <br/>
-    - usage of spritesheet icons for better performance<br/>
-    - try to dynamically compute doable recipes (check here) instead of using hard-coded arrays.<br/>
-    - "plan to craft" mode<br/>
+    - try to dynamically compute doable recipes (check <a href="https://github.com/bladecoding/isaac-bagofcrafting" target="_blank">here</a>) instead of using hard-coded arrays.<br/>
+    - "plan to craft" and "favorites" modes<br/>
     </p>
     
   </div>
