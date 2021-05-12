@@ -1,6 +1,8 @@
 <template>
   <div>
     <h1>Tainted Cain calculator!</h1>
+    <p style="margin:10px;">A companion webapp for <a href="https://store.steampowered.com/app/1426300/The_Binding_of_Isaac_Repentance/" target="_blank">The Binding Of Isaac: Repentance</a> "Tainted Cain" character.</p>
+    <p style="margin:10px;">Enter pickups available in your current floor to know what items could be crafted!</p>
     <div id="input-wrapper">
       <div class="input-group" v-for="(group, index) of pickupDefinitions" :key="index">
         <div class="input-pickup" v-for="pickup of group" :key="pickup.index">

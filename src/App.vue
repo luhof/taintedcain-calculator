@@ -9,10 +9,18 @@
     <p style="margin : 30px; line-height:1.5rem;">
     Refactor, optimization and search filter by <a href="https://github.com/adroslice" target="_blank">Adroslice</a>! 1000000 thanks!<br/>
     </p>
+    <p style="margin : 30px; line-height:1.5rem">
+      Ads can help me buy a dedicated domain for this webapp! Disabling your adblocker would be super kind :)<br/>
+      <!-- TaintedCain-ad -->
+        <Adsense
+            data-ad-client="ca-pub-7213502394220009"
+            data-ad-slot="2542620209">
+        </Adsense>
+    </p>
     <p style="margin : 30px; line-height:1.5rem;">
     TODO : <br/>
     - usage of spritesheet icons for better performance<br/>
-    - try to dynamically compute doable recipes (check here) instead of using hard-coded arrays.
+    - try to dynamically compute doable recipes (check here) instead of using hard-coded arrays.<br/>
     - "plan to craft" mode<br/>
     </p>
     
