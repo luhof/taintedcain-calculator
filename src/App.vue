@@ -13,8 +13,8 @@
       Ads can help me buy a dedicated domain for this webapp! Disabling your adblocker would be super kind :)<br/>
       <!-- TaintedCain-ad -->
         <Adsense
-            data-ad-client="ca-pub-7213502394220009"
-            data-ad-slot="2542620209">
+            data-ad-client="ca-pub-7168736483934330"
+            data-ad-slot="5068565402">
         </Adsense>
     </p>
     <p style="margin : 30px; line-height:1.5rem;">
