@@ -1,0 +1,2161 @@
+.bg-collectible{
+    width: 64px;
+    height: 64px;
+}
+.bg-collectibles_1 {
+    background: url('/css_sprites-min.png') -10px -10px;
+}
+.bg-collectibles_2 {
+    background: url('/css_sprites-min.png') -94px -10px;
+}
+.bg-collectibles_3 {
+    background: url('/css_sprites-min.png') -10px -94px;
+}
+.bg-collectibles_4 {
+    background: url('/css_sprites-min.png') -94px -94px;
+}
+.bg-collectibles_5 {
+    background: url('/css_sprites-min.png') -178px -10px;
+}
+.bg-collectibles_6 {
+    background: url('/css_sprites-min.png') -178px -94px;
+}
+.bg-collectibles_7 {
+    background: url('/css_sprites-min.png') -10px -178px;
+}
+.bg-collectibles_8 {
+    background: url('/css_sprites-min.png') -94px -178px;
+}
+.bg-collectibles_9 {
+    background: url('/css_sprites-min.png') -178px -178px;
+}
+.bg-collectibles_10 {
+    background: url('/css_sprites-min.png') -262px -10px;
+}
+.bg-collectibles_11 {
+    background: url('/css_sprites-min.png') -262px -94px;
+}
+.bg-collectibles_12 {
+    background: url('/css_sprites-min.png') -262px -178px;
+}
+.bg-collectibles_13 {
+    background: url('/css_sprites-min.png') -10px -262px;
+}
+.bg-collectibles_14 {
+    background: url('/css_sprites-min.png') -94px -262px;
+}
+.bg-collectibles_15 {
+    background: url('/css_sprites-min.png') -178px -262px;
+}
+.bg-collectibles_16 {
+    background: url('/css_sprites-min.png') -262px -262px;
+}
+.bg-collectibles_17 {
+    background: url('/css_sprites-min.png') -346px -10px;
+}
+.bg-collectibles_18 {
+    background: url('/css_sprites-min.png') -346px -94px;
+}
+.bg-collectibles_19 {
+    background: url('/css_sprites-min.png') -346px -178px;
+}
+.bg-collectibles_20 {
+    background: url('/css_sprites-min.png') -346px -262px;
+}
+.bg-collectibles_21 {
+    background: url('/css_sprites-min.png') -10px -346px;
+}
+.bg-collectibles_22 {
+    background: url('/css_sprites-min.png') -94px -346px;
+}
+.bg-collectibles_23 {
+    background: url('/css_sprites-min.png') -178px -346px;
+}
+.bg-collectibles_24 {
+    background: url('/css_sprites-min.png') -262px -346px;
+}
+.bg-collectibles_25 {
+    background: url('/css_sprites-min.png') -346px -346px;
+}
+.bg-collectibles_26 {
+    background: url('/css_sprites-min.png') -430px -10px;
+}
+.bg-collectibles_27 {
+    background: url('/css_sprites-min.png') -430px -94px;
+}
+.bg-collectibles_28 {
+    background: url('/css_sprites-min.png') -430px -178px;
+}
+.bg-collectibles_29 {
+    background: url('/css_sprites-min.png') -430px -262px;
+}
+.bg-collectibles_30 {
+    background: url('/css_sprites-min.png') -430px -346px;
+}
+.bg-collectibles_31 {
+    background: url('/css_sprites-min.png') -10px -430px;
+}
+.bg-collectibles_32 {
+    background: url('/css_sprites-min.png') -94px -430px;
+}
+.bg-collectibles_33 {
+    background: url('/css_sprites-min.png') -178px -430px;
+}
+.bg-collectibles_34 {
+    background: url('/css_sprites-min.png') -262px -430px;
+}
+.bg-collectibles_35 {
+    background: url('/css_sprites-min.png') -346px -430px;
+}
+.bg-collectibles_36 {
+    background: url('/css_sprites-min.png') -430px -430px;
+}
+.bg-collectibles_37 {
+    background: url('/css_sprites-min.png') -514px -10px;
+}
+.bg-collectibles_38 {
+    background: url('/css_sprites-min.png') -514px -94px;
+}
+.bg-collectibles_39 {
+    background: url('/css_sprites-min.png') -514px -178px;
+}
+.bg-collectibles_40 {
+    background: url('/css_sprites-min.png') -514px -262px;
+}
+.bg-collectibles_41 {
+    background: url('/css_sprites-min.png') -514px -346px;
+}
+.bg-collectibles_42 {
+    background: url('/css_sprites-min.png') -514px -430px;
+}
+.bg-collectibles_44 {
+    background: url('/css_sprites-min.png') -10px -514px;
+}
+.bg-collectibles_45 {
+    background: url('/css_sprites-min.png') -94px -514px;
+}
+.bg-collectibles_46 {
+    background: url('/css_sprites-min.png') -178px -514px;
+}
+.bg-collectibles_47 {
+    background: url('/css_sprites-min.png') -262px -514px;
+}
+.bg-collectibles_48 {
+    background: url('/css_sprites-min.png') -346px -514px;
+}
+.bg-collectibles_49 {
+    background: url('/css_sprites-min.png') -430px -514px;
+}
+.bg-collectibles_50 {
+    background: url('/css_sprites-min.png') -514px -514px;
+}
+.bg-collectibles_51 {
+    background: url('/css_sprites-min.png') -598px -10px;
+}
+.bg-collectibles_52 {
+    background: url('/css_sprites-min.png') -598px -94px;
+}
+.bg-collectibles_53 {
+    background: url('/css_sprites-min.png') -598px -178px;
+}
+.bg-collectibles_54 {
+    background: url('/css_sprites-min.png') -598px -262px;
+}
+.bg-collectibles_55 {
+    background: url('/css_sprites-min.png') -598px -346px;
+}
+.bg-collectibles_56 {
+    background: url('/css_sprites-min.png') -598px -430px;
+}
+.bg-collectibles_57 {
+    background: url('/css_sprites-min.png') -598px -514px;
+}
+.bg-collectibles_58 {
+    background: url('/css_sprites-min.png') -10px -598px;
+}
+.bg-collectibles_60 {
+    background: url('/css_sprites-min.png') -94px -598px;
+}
+.bg-collectibles_62 {
+    background: url('/css_sprites-min.png') -178px -598px;
+}
+.bg-collectibles_63 {
+    background: url('/css_sprites-min.png') -262px -598px;
+}
+.bg-collectibles_64 {
+    background: url('/css_sprites-min.png') -346px -598px;
+}
+.bg-collectibles_65 {
+    background: url('/css_sprites-min.png') -430px -598px;
+}
+.bg-collectibles_66 {
+    background: url('/css_sprites-min.png') -514px -598px;
+}
+.bg-collectibles_67 {
+    background: url('/css_sprites-min.png') -598px -598px;
+}
+.bg-collectibles_68 {
+    background: url('/css_sprites-min.png') -682px -10px;
+}
+.bg-collectibles_69 {
+    background: url('/css_sprites-min.png') -682px -94px;
+}
+.bg-collectibles_70 {
+    background: url('/css_sprites-min.png') -682px -178px;
+}
+.bg-collectibles_71 {
+    background: url('/css_sprites-min.png') -682px -262px;
+}
+.bg-collectibles_72 {
+    background: url('/css_sprites-min.png') -682px -346px;
+}
+.bg-collectibles_73 {
+    background: url('/css_sprites-min.png') -682px -430px;
+}
+.bg-collectibles_74 {
+    background: url('/css_sprites-min.png') -682px -514px;
+}
+.bg-collectibles_75 {
+    background: url('/css_sprites-min.png') -682px -598px;
+}
+.bg-collectibles_76 {
+    background: url('/css_sprites-min.png') -10px -682px;
+}
+.bg-collectibles_77 {
+    background: url('/css_sprites-min.png') -94px -682px;
+}
+.bg-collectibles_78 {
+    background: url('/css_sprites-min.png') -178px -682px;
+}
+.bg-collectibles_79 {
+    background: url('/css_sprites-min.png') -262px -682px;
+}
+.bg-collectibles_80 {
+    background: url('/css_sprites-min.png') -346px -682px;
+}
+.bg-collectibles_81 {
+    background: url('/css_sprites-min.png') -430px -682px;
+}
+.bg-collectibles_82 {
+    background: url('/css_sprites-min.png') -514px -682px;
+}
+.bg-collectibles_83 {
+    background: url('/css_sprites-min.png') -598px -682px;
+}
+.bg-collectibles_84 {
+    background: url('/css_sprites-min.png') -682px -682px;
+}
+.bg-collectibles_85 {
+    background: url('/css_sprites-min.png') -766px -10px;
+}
+.bg-collectibles_86 {
+    background: url('/css_sprites-min.png') -766px -94px;
+}
+.bg-collectibles_87 {
+    background: url('/css_sprites-min.png') -766px -178px;
+}
+.bg-collectibles_88 {
+    background: url('/css_sprites-min.png') -766px -262px;
+}
+.bg-collectibles_89 {
+    background: url('/css_sprites-min.png') -766px -346px;
+}
+.bg-collectibles_90 {
+    background: url('/css_sprites-min.png') -766px -430px;
+}
+.bg-collectibles_91 {
+    background: url('/css_sprites-min.png') -766px -514px;
+}
+.bg-collectibles_92 {
+    background: url('/css_sprites-min.png') -766px -598px;
+}
+.bg-collectibles_93 {
+    background: url('/css_sprites-min.png') -766px -682px;
+}
+.bg-collectibles_94 {
+    background: url('/css_sprites-min.png') -10px -766px;
+}
+.bg-collectibles_95 {
+    background: url('/css_sprites-min.png') -94px -766px;
+}
+.bg-collectibles_96 {
+    background: url('/css_sprites-min.png') -178px -766px;
+}
+.bg-collectibles_97 {
+    background: url('/css_sprites-min.png') -262px -766px;
+}
+.bg-collectibles_98 {
+    background: url('/css_sprites-min.png') -346px -766px;
+}
+.bg-collectibles_99 {
+    background: url('/css_sprites-min.png') -430px -766px;
+}
+.bg-collectibles_100 {
+    background: url('/css_sprites-min.png') -514px -766px;
+}
+.bg-collectibles_101 {
+    background: url('/css_sprites-min.png') -598px -766px;
+}
+.bg-collectibles_102 {
+    background: url('/css_sprites-min.png') -682px -766px;
+}
+.bg-collectibles_103 {
+    background: url('/css_sprites-min.png') -766px -766px;
+}
+.bg-collectibles_104 {
+    background: url('/css_sprites-min.png') -850px -10px;
+}
+.bg-collectibles_105 {
+    background: url('/css_sprites-min.png') -850px -94px;
+}
+.bg-collectibles_106 {
+    background: url('/css_sprites-min.png') -850px -178px;
+}
+.bg-collectibles_107 {
+    background: url('/css_sprites-min.png') -850px -262px;
+}
+.bg-collectibles_108 {
+    background: url('/css_sprites-min.png') -850px -346px;
+}
+.bg-collectibles_109 {
+    background: url('/css_sprites-min.png') -850px -430px;
+}
+.bg-collectibles_110 {
+    background: url('/css_sprites-min.png') -850px -514px;
+}
+.bg-collectibles_111 {
+    background: url('/css_sprites-min.png') -850px -598px;
+}
+.bg-collectibles_112 {
+    background: url('/css_sprites-min.png') -850px -682px;
+}
+.bg-collectibles_113 {
+    background: url('/css_sprites-min.png') -850px -766px;
+}
+.bg-collectibles_114 {
+    background: url('/css_sprites-min.png') -10px -850px;
+}
+.bg-collectibles_115 {
+    background: url('/css_sprites-min.png') -94px -850px;
+}
+.bg-collectibles_116 {
+    background: url('/css_sprites-min.png') -178px -850px;
+}
+.bg-collectibles_117 {
+    background: url('/css_sprites-min.png') -262px -850px;
+}
+.bg-collectibles_118 {
+    background: url('/css_sprites-min.png') -346px -850px;
+}
+.bg-collectibles_119 {
+    background: url('/css_sprites-min.png') -430px -850px;
+}
+.bg-collectibles_120 {
+    background: url('/css_sprites-min.png') -514px -850px;
+}
+.bg-collectibles_121 {
+    background: url('/css_sprites-min.png') -598px -850px;
+}
+.bg-collectibles_122 {
+    background: url('/css_sprites-min.png') -682px -850px;
+}
+.bg-collectibles_123 {
+    background: url('/css_sprites-min.png') -766px -850px;
+}
+.bg-collectibles_124 {
+    background: url('/css_sprites-min.png') -850px -850px;
+}
+.bg-collectibles_125 {
+    background: url('/css_sprites-min.png') -934px -10px;
+}
+.bg-collectibles_126 {
+    background: url('/css_sprites-min.png') -934px -94px;
+}
+.bg-collectibles_127 {
+    background: url('/css_sprites-min.png') -934px -178px;
+}
+.bg-collectibles_128 {
+    background: url('/css_sprites-min.png') -934px -262px;
+}
+.bg-collectibles_129 {
+    background: url('/css_sprites-min.png') -934px -346px;
+}
+.bg-collectibles_130 {
+    background: url('/css_sprites-min.png') -934px -430px;
+}
+.bg-collectibles_131 {
+    background: url('/css_sprites-min.png') -934px -514px;
+}
+.bg-collectibles_132 {
+    background: url('/css_sprites-min.png') -934px -598px;
+}
+.bg-collectibles_133 {
+    background: url('/css_sprites-min.png') -934px -682px;
+}
+.bg-collectibles_134 {
+    background: url('/css_sprites-min.png') -934px -766px;
+}
+.bg-collectibles_135 {
+    background: url('/css_sprites-min.png') -934px -850px;
+}
+.bg-collectibles_136 {
+    background: url('/css_sprites-min.png') -10px -934px;
+}
+.bg-collectibles_137 {
+    background: url('/css_sprites-min.png') -94px -934px;
+}
+.bg-collectibles_138 {
+    background: url('/css_sprites-min.png') -178px -934px;
+}
+.bg-collectibles_139 {
+    background: url('/css_sprites-min.png') -262px -934px;
+}
+.bg-collectibles_140 {
+    background: url('/css_sprites-min.png') -346px -934px;
+}
+.bg-collectibles_141 {
+    background: url('/css_sprites-min.png') -430px -934px;
+}
+.bg-collectibles_142 {
+    background: url('/css_sprites-min.png') -514px -934px;
+}
+.bg-collectibles_143 {
+    background: url('/css_sprites-min.png') -598px -934px;
+}
+.bg-collectibles_144 {
+    background: url('/css_sprites-min.png') -682px -934px;
+}
+.bg-collectibles_145 {
+    background: url('/css_sprites-min.png') -766px -934px;
+}
+.bg-collectibles_146 {
+    background: url('/css_sprites-min.png') -850px -934px;
+}
+.bg-collectibles_147 {
+    background: url('/css_sprites-min.png') -934px -934px;
+}
+.bg-collectibles_148 {
+    background: url('/css_sprites-min.png') -1018px -10px;
+}
+.bg-collectibles_149 {
+    background: url('/css_sprites-min.png') -1018px -94px;
+}
+.bg-collectibles_150 {
+    background: url('/css_sprites-min.png') -1018px -178px;
+}
+.bg-collectibles_151 {
+    background: url('/css_sprites-min.png') -1018px -262px;
+}
+.bg-collectibles_152 {
+    background: url('/css_sprites-min.png') -1018px -346px;
+}
+.bg-collectibles_153 {
+    background: url('/css_sprites-min.png') -1018px -430px;
+}
+.bg-collectibles_154 {
+    background: url('/css_sprites-min.png') -1018px -514px;
+}
+.bg-collectibles_155 {
+    background: url('/css_sprites-min.png') -1018px -598px;
+}
+.bg-collectibles_156 {
+    background: url('/css_sprites-min.png') -1018px -682px;
+}
+.bg-collectibles_157 {
+    background: url('/css_sprites-min.png') -1018px -766px;
+}
+.bg-collectibles_158 {
+    background: url('/css_sprites-min.png') -1018px -850px;
+}
+.bg-collectibles_159 {
+    background: url('/css_sprites-min.png') -1018px -934px;
+}
+.bg-collectibles_160 {
+    background: url('/css_sprites-min.png') -10px -1018px;
+}
+.bg-collectibles_161 {
+    background: url('/css_sprites-min.png') -94px -1018px;
+}
+.bg-collectibles_162 {
+    background: url('/css_sprites-min.png') -178px -1018px;
+}
+.bg-collectibles_163 {
+    background: url('/css_sprites-min.png') -262px -1018px;
+}
+.bg-collectibles_164 {
+    background: url('/css_sprites-min.png') -346px -1018px;
+}
+.bg-collectibles_165 {
+    background: url('/css_sprites-min.png') -430px -1018px;
+}
+.bg-collectibles_166 {
+    background: url('/css_sprites-min.png') -514px -1018px;
+}
+.bg-collectibles_167 {
+    background: url('/css_sprites-min.png') -598px -1018px;
+}
+.bg-collectibles_168 {
+    background: url('/css_sprites-min.png') -682px -1018px;
+}
+.bg-collectibles_169 {
+    background: url('/css_sprites-min.png') -766px -1018px;
+}
+.bg-collectibles_170 {
+    background: url('/css_sprites-min.png') -850px -1018px;
+}
+.bg-collectibles_171 {
+    background: url('/css_sprites-min.png') -934px -1018px;
+}
+.bg-collectibles_172 {
+    background: url('/css_sprites-min.png') -1018px -1018px;
+}
+.bg-collectibles_173 {
+    background: url('/css_sprites-min.png') -1102px -10px;
+}
+.bg-collectibles_174 {
+    background: url('/css_sprites-min.png') -1102px -94px;
+}
+.bg-collectibles_175 {
+    background: url('/css_sprites-min.png') -1102px -178px;
+}
+.bg-collectibles_176 {
+    background: url('/css_sprites-min.png') -1102px -262px;
+}
+.bg-collectibles_177 {
+    background: url('/css_sprites-min.png') -1102px -346px;
+}
+.bg-collectibles_178 {
+    background: url('/css_sprites-min.png') -1102px -430px;
+}
+.bg-collectibles_179 {
+    background: url('/css_sprites-min.png') -1102px -514px;
+}
+.bg-collectibles_180 {
+    background: url('/css_sprites-min.png') -1102px -598px;
+}
+.bg-collectibles_181 {
+    background: url('/css_sprites-min.png') -1102px -682px;
+}
+.bg-collectibles_182 {
+    background: url('/css_sprites-min.png') -1102px -766px;
+}
+.bg-collectibles_183 {
+    background: url('/css_sprites-min.png') -1102px -850px;
+}
+.bg-collectibles_184 {
+    background: url('/css_sprites-min.png') -1102px -934px;
+}
+.bg-collectibles_185 {
+    background: url('/css_sprites-min.png') -1102px -1018px;
+}
+.bg-collectibles_186 {
+    background: url('/css_sprites-min.png') -10px -1102px;
+}
+.bg-collectibles_187 {
+    background: url('/css_sprites-min.png') -94px -1102px;
+}
+.bg-collectibles_188 {
+    background: url('/css_sprites-min.png') -178px -1102px;
+}
+.bg-collectibles_189 {
+    background: url('/css_sprites-min.png') -262px -1102px;
+}
+.bg-collectibles_190 {
+    background: url('/css_sprites-min.png') -346px -1102px;
+}
+.bg-collectibles_191 {
+    background: url('/css_sprites-min.png') -430px -1102px;
+}
+.bg-collectibles_192 {
+    background: url('/css_sprites-min.png') -514px -1102px;
+}
+.bg-collectibles_193 {
+    background: url('/css_sprites-min.png') -598px -1102px;
+}
+.bg-collectibles_194 {
+    background: url('/css_sprites-min.png') -682px -1102px;
+}
+.bg-collectibles_195 {
+    background: url('/css_sprites-min.png') -766px -1102px;
+}
+.bg-collectibles_196 {
+    background: url('/css_sprites-min.png') -850px -1102px;
+}
+.bg-collectibles_197 {
+    background: url('/css_sprites-min.png') -934px -1102px;
+}
+.bg-collectibles_198 {
+    background: url('/css_sprites-min.png') -1018px -1102px;
+}
+.bg-collectibles_199 {
+    background: url('/css_sprites-min.png') -1102px -1102px;
+}
+.bg-collectibles_200 {
+    background: url('/css_sprites-min.png') -1186px -10px;
+}
+.bg-collectibles_201 {
+    background: url('/css_sprites-min.png') -1186px -94px;
+}
+.bg-collectibles_202 {
+    background: url('/css_sprites-min.png') -1186px -178px;
+}
+.bg-collectibles_203 {
+    background: url('/css_sprites-min.png') -1186px -262px;
+}
+.bg-collectibles_204 {
+    background: url('/css_sprites-min.png') -1186px -346px;
+}
+.bg-collectibles_205 {
+    background: url('/css_sprites-min.png') -1186px -430px;
+}
+.bg-collectibles_206 {
+    background: url('/css_sprites-min.png') -1186px -514px;
+}
+.bg-collectibles_207 {
+    background: url('/css_sprites-min.png') -1186px -598px;
+}
+.bg-collectibles_208 {
+    background: url('/css_sprites-min.png') -1186px -682px;
+}
+.bg-collectibles_209 {
+    background: url('/css_sprites-min.png') -1186px -766px;
+}
+.bg-collectibles_210 {
+    background: url('/css_sprites-min.png') -1186px -850px;
+}
+.bg-collectibles_211 {
+    background: url('/css_sprites-min.png') -1186px -934px;
+}
+.bg-collectibles_212 {
+    background: url('/css_sprites-min.png') -1186px -1018px;
+}
+.bg-collectibles_213 {
+    background: url('/css_sprites-min.png') -1186px -1102px;
+}
+.bg-collectibles_214 {
+    background: url('/css_sprites-min.png') -10px -1186px;
+}
+.bg-collectibles_215 {
+    background: url('/css_sprites-min.png') -94px -1186px;
+}
+.bg-collectibles_216 {
+    background: url('/css_sprites-min.png') -178px -1186px;
+}
+.bg-collectibles_217 {
+    background: url('/css_sprites-min.png') -262px -1186px;
+}
+.bg-collectibles_218 {
+    background: url('/css_sprites-min.png') -346px -1186px;
+}
+.bg-collectibles_219 {
+    background: url('/css_sprites-min.png') -430px -1186px;
+}
+.bg-collectibles_220 {
+    background: url('/css_sprites-min.png') -514px -1186px;
+}
+.bg-collectibles_221 {
+    background: url('/css_sprites-min.png') -598px -1186px;
+}
+.bg-collectibles_222 {
+    background: url('/css_sprites-min.png') -682px -1186px;
+}
+.bg-collectibles_223 {
+    background: url('/css_sprites-min.png') -766px -1186px;
+}
+.bg-collectibles_224 {
+    background: url('/css_sprites-min.png') -850px -1186px;
+}
+.bg-collectibles_225 {
+    background: url('/css_sprites-min.png') -934px -1186px;
+}
+.bg-collectibles_226 {
+    background: url('/css_sprites-min.png') -1018px -1186px;
+}
+.bg-collectibles_227 {
+    background: url('/css_sprites-min.png') -1102px -1186px;
+}
+.bg-collectibles_228 {
+    background: url('/css_sprites-min.png') -1186px -1186px;
+}
+.bg-collectibles_229 {
+    background: url('/css_sprites-min.png') -1270px -10px;
+}
+.bg-collectibles_230 {
+    background: url('/css_sprites-min.png') -1270px -94px;
+}
+.bg-collectibles_231 {
+    background: url('/css_sprites-min.png') -1270px -178px;
+}
+.bg-collectibles_232 {
+    background: url('/css_sprites-min.png') -1270px -262px;
+}
+.bg-collectibles_233 {
+    background: url('/css_sprites-min.png') -1270px -346px;
+}
+.bg-collectibles_234 {
+    background: url('/css_sprites-min.png') -1270px -430px;
+}
+.bg-collectibles_236 {
+    background: url('/css_sprites-min.png') -1270px -514px;
+}
+.bg-collectibles_237 {
+    background: url('/css_sprites-min.png') -1270px -598px;
+}
+.bg-collectibles_238 {
+    background: url('/css_sprites-min.png') -1270px -682px;
+}
+.bg-collectibles_239 {
+    background: url('/css_sprites-min.png') -1270px -766px;
+}
+.bg-collectibles_240 {
+    background: url('/css_sprites-min.png') -1270px -850px;
+}
+.bg-collectibles_241 {
+    background: url('/css_sprites-min.png') -1270px -934px;
+}
+.bg-collectibles_242 {
+    background: url('/css_sprites-min.png') -1270px -1018px;
+}
+.bg-collectibles_243 {
+    background: url('/css_sprites-min.png') -1270px -1102px;
+}
+.bg-collectibles_244 {
+    background: url('/css_sprites-min.png') -1270px -1186px;
+}
+.bg-collectibles_245 {
+    background: url('/css_sprites-min.png') -10px -1270px;
+}
+.bg-collectibles_246 {
+    background: url('/css_sprites-min.png') -94px -1270px;
+}
+.bg-collectibles_247 {
+    background: url('/css_sprites-min.png') -178px -1270px;
+}
+.bg-collectibles_248 {
+    background: url('/css_sprites-min.png') -262px -1270px;
+}
+.bg-collectibles_249 {
+    background: url('/css_sprites-min.png') -346px -1270px;
+}
+.bg-collectibles_250 {
+    background: url('/css_sprites-min.png') -430px -1270px;
+}
+.bg-collectibles_251 {
+    background: url('/css_sprites-min.png') -514px -1270px;
+}
+.bg-collectibles_252 {
+    background: url('/css_sprites-min.png') -598px -1270px;
+}
+.bg-collectibles_253 {
+    background: url('/css_sprites-min.png') -682px -1270px;
+}
+.bg-collectibles_254 {
+    background: url('/css_sprites-min.png') -766px -1270px;
+}
+.bg-collectibles_255 {
+    background: url('/css_sprites-min.png') -850px -1270px;
+}
+.bg-collectibles_256 {
+    background: url('/css_sprites-min.png') -934px -1270px;
+}
+.bg-collectibles_257 {
+    background: url('/css_sprites-min.png') -1018px -1270px;
+}
+.bg-collectibles_258 {
+    background: url('/css_sprites-min.png') -1102px -1270px;
+}
+.bg-collectibles_259 {
+    background: url('/css_sprites-min.png') -1186px -1270px;
+}
+.bg-collectibles_260 {
+    background: url('/css_sprites-min.png') -1270px -1270px;
+}
+.bg-collectibles_261 {
+    background: url('/css_sprites-min.png') -1354px -10px;
+}
+.bg-collectibles_262 {
+    background: url('/css_sprites-min.png') -1354px -94px;
+}
+.bg-collectibles_263 {
+    background: url('/css_sprites-min.png') -1354px -178px;
+}
+.bg-collectibles_264 {
+    background: url('/css_sprites-min.png') -1354px -262px;
+}
+.bg-collectibles_265 {
+    background: url('/css_sprites-min.png') -1354px -346px;
+}
+.bg-collectibles_266 {
+    background: url('/css_sprites-min.png') -1354px -430px;
+}
+.bg-collectibles_267 {
+    background: url('/css_sprites-min.png') -1354px -514px;
+}
+.bg-collectibles_268 {
+    background: url('/css_sprites-min.png') -1354px -598px;
+}
+.bg-collectibles_269 {
+    background: url('/css_sprites-min.png') -1354px -682px;
+}
+.bg-collectibles_270 {
+    background: url('/css_sprites-min.png') -1354px -766px;
+}
+.bg-collectibles_271 {
+    background: url('/css_sprites-min.png') -1354px -850px;
+}
+.bg-collectibles_272 {
+    background: url('/css_sprites-min.png') -1354px -934px;
+}
+.bg-collectibles_273 {
+    background: url('/css_sprites-min.png') -1354px -1018px;
+}
+.bg-collectibles_274 {
+    background: url('/css_sprites-min.png') -1354px -1102px;
+}
+.bg-collectibles_275 {
+    background: url('/css_sprites-min.png') -1354px -1186px;
+}
+.bg-collectibles_276 {
+    background: url('/css_sprites-min.png') -1354px -1270px;
+}
+.bg-collectibles_277 {
+    background: url('/css_sprites-min.png') -10px -1354px;
+}
+.bg-collectibles_278 {
+    background: url('/css_sprites-min.png') -94px -1354px;
+}
+.bg-collectibles_279 {
+    background: url('/css_sprites-min.png') -178px -1354px;
+}
+.bg-collectibles_280 {
+    background: url('/css_sprites-min.png') -262px -1354px;
+}
+.bg-collectibles_281 {
+    background: url('/css_sprites-min.png') -346px -1354px;
+}
+.bg-collectibles_282 {
+    background: url('/css_sprites-min.png') -430px -1354px;
+}
+.bg-collectibles_283 {
+    background: url('/css_sprites-min.png') -514px -1354px;
+}
+.bg-collectibles_284 {
+    background: url('/css_sprites-min.png') -598px -1354px;
+}
+.bg-collectibles_285 {
+    background: url('/css_sprites-min.png') -682px -1354px;
+}
+.bg-collectibles_286 {
+    background: url('/css_sprites-min.png') -766px -1354px;
+}
+.bg-collectibles_287 {
+    background: url('/css_sprites-min.png') -850px -1354px;
+}
+.bg-collectibles_288 {
+    background: url('/css_sprites-min.png') -934px -1354px;
+}
+.bg-collectibles_289 {
+    background: url('/css_sprites-min.png') -1018px -1354px;
+}
+.bg-collectibles_290 {
+    background: url('/css_sprites-min.png') -1102px -1354px;
+}
+.bg-collectibles_291 {
+    background: url('/css_sprites-min.png') -1186px -1354px;
+}
+.bg-collectibles_292 {
+    background: url('/css_sprites-min.png') -1270px -1354px;
+}
+.bg-collectibles_293 {
+    background: url('/css_sprites-min.png') -1354px -1354px;
+}
+.bg-collectibles_294 {
+    background: url('/css_sprites-min.png') -1438px -10px;
+}
+.bg-collectibles_295 {
+    background: url('/css_sprites-min.png') -1438px -94px;
+}
+.bg-collectibles_296 {
+    background: url('/css_sprites-min.png') -1438px -178px;
+}
+.bg-collectibles_297 {
+    background: url('/css_sprites-min.png') -1438px -262px;
+}
+.bg-collectibles_298 {
+    background: url('/css_sprites-min.png') -1438px -346px;
+}
+.bg-collectibles_299 {
+    background: url('/css_sprites-min.png') -1438px -430px;
+}
+.bg-collectibles_300 {
+    background: url('/css_sprites-min.png') -1438px -514px;
+}
+.bg-collectibles_301 {
+    background: url('/css_sprites-min.png') -1438px -598px;
+}
+.bg-collectibles_302 {
+    background: url('/css_sprites-min.png') -1438px -682px;
+}
+.bg-collectibles_303 {
+    background: url('/css_sprites-min.png') -1438px -766px;
+}
+.bg-collectibles_304 {
+    background: url('/css_sprites-min.png') -1438px -850px;
+}
+.bg-collectibles_305 {
+    background: url('/css_sprites-min.png') -1438px -934px;
+}
+.bg-collectibles_306 {
+    background: url('/css_sprites-min.png') -1438px -1018px;
+}
+.bg-collectibles_307 {
+    background: url('/css_sprites-min.png') -1438px -1102px;
+}
+.bg-collectibles_308 {
+    background: url('/css_sprites-min.png') -1438px -1186px;
+}
+.bg-collectibles_309 {
+    background: url('/css_sprites-min.png') -1438px -1270px;
+}
+.bg-collectibles_310 {
+    background: url('/css_sprites-min.png') -1438px -1354px;
+}
+.bg-collectibles_311 {
+    background: url('/css_sprites-min.png') -10px -1438px;
+}
+.bg-collectibles_312 {
+    background: url('/css_sprites-min.png') -94px -1438px;
+}
+.bg-collectibles_313 {
+    background: url('/css_sprites-min.png') -178px -1438px;
+}
+.bg-collectibles_314 {
+    background: url('/css_sprites-min.png') -262px -1438px;
+}
+.bg-collectibles_315 {
+    background: url('/css_sprites-min.png') -346px -1438px;
+}
+.bg-collectibles_316 {
+    background: url('/css_sprites-min.png') -430px -1438px;
+}
+.bg-collectibles_317 {
+    background: url('/css_sprites-min.png') -514px -1438px;
+}
+.bg-collectibles_318 {
+    background: url('/css_sprites-min.png') -598px -1438px;
+}
+.bg-collectibles_319 {
+    background: url('/css_sprites-min.png') -682px -1438px;
+}
+.bg-collectibles_320 {
+    background: url('/css_sprites-min.png') -766px -1438px;
+}
+.bg-collectibles_321 {
+    background: url('/css_sprites-min.png') -850px -1438px;
+}
+.bg-collectibles_322 {
+    background: url('/css_sprites-min.png') -934px -1438px;
+}
+.bg-collectibles_323 {
+    background: url('/css_sprites-min.png') -1018px -1438px;
+}
+.bg-collectibles_324 {
+    background: url('/css_sprites-min.png') -1102px -1438px;
+}
+.bg-collectibles_325 {
+    background: url('/css_sprites-min.png') -1186px -1438px;
+}
+.bg-collectibles_326 {
+    background: url('/css_sprites-min.png') -1270px -1438px;
+}
+.bg-collectibles_327 {
+    background: url('/css_sprites-min.png') -1354px -1438px;
+}
+.bg-collectibles_328 {
+    background: url('/css_sprites-min.png') -1438px -1438px;
+}
+.bg-collectibles_329 {
+    background: url('/css_sprites-min.png') -1522px -10px;
+}
+.bg-collectibles_330 {
+    background: url('/css_sprites-min.png') -1522px -94px;
+}
+.bg-collectibles_331 {
+    background: url('/css_sprites-min.png') -1522px -178px;
+}
+.bg-collectibles_332 {
+    background: url('/css_sprites-min.png') -1522px -262px;
+}
+.bg-collectibles_333 {
+    background: url('/css_sprites-min.png') -1522px -346px;
+}
+.bg-collectibles_334 {
+    background: url('/css_sprites-min.png') -1522px -430px;
+}
+.bg-collectibles_335 {
+    background: url('/css_sprites-min.png') -1522px -514px;
+}
+.bg-collectibles_336 {
+    background: url('/css_sprites-min.png') -1522px -598px;
+}
+.bg-collectibles_337 {
+    background: url('/css_sprites-min.png') -1522px -682px;
+}
+.bg-collectibles_338 {
+    background: url('/css_sprites-min.png') -1522px -766px;
+}
+.bg-collectibles_339 {
+    background: url('/css_sprites-min.png') -1522px -850px;
+}
+.bg-collectibles_340 {
+    background: url('/css_sprites-min.png') -1522px -934px;
+}
+.bg-collectibles_341 {
+    background: url('/css_sprites-min.png') -1522px -1018px;
+}
+.bg-collectibles_342 {
+    background: url('/css_sprites-min.png') -1522px -1102px;
+}
+.bg-collectibles_343 {
+    background: url('/css_sprites-min.png') -1522px -1186px;
+}
+.bg-collectibles_344 {
+    background: url('/css_sprites-min.png') -1522px -1270px;
+}
+.bg-collectibles_345 {
+    background: url('/css_sprites-min.png') -1522px -1354px;
+}
+.bg-collectibles_346 {
+    background: url('/css_sprites-min.png') -1522px -1438px;
+}
+.bg-collectibles_347 {
+    background: url('/css_sprites-min.png') -10px -1522px;
+}
+.bg-collectibles_348 {
+    background: url('/css_sprites-min.png') -94px -1522px;
+}
+.bg-collectibles_349 {
+    background: url('/css_sprites-min.png') -178px -1522px;
+}
+.bg-collectibles_350 {
+    background: url('/css_sprites-min.png') -262px -1522px;
+}
+.bg-collectibles_351 {
+    background: url('/css_sprites-min.png') -346px -1522px;
+}
+.bg-collectibles_352 {
+    background: url('/css_sprites-min.png') -430px -1522px;
+}
+.bg-collectibles_353 {
+    background: url('/css_sprites-min.png') -514px -1522px;
+}
+.bg-collectibles_354 {
+    background: url('/css_sprites-min.png') -598px -1522px;
+}
+.bg-collectibles_355 {
+    background: url('/css_sprites-min.png') -682px -1522px;
+}
+.bg-collectibles_356 {
+    background: url('/css_sprites-min.png') -766px -1522px;
+}
+.bg-collectibles_357 {
+    background: url('/css_sprites-min.png') -850px -1522px;
+}
+.bg-collectibles_358 {
+    background: url('/css_sprites-min.png') -934px -1522px;
+}
+.bg-collectibles_359 {
+    background: url('/css_sprites-min.png') -1018px -1522px;
+}
+.bg-collectibles_360 {
+    background: url('/css_sprites-min.png') -1102px -1522px;
+}
+.bg-collectibles_361 {
+    background: url('/css_sprites-min.png') -1186px -1522px;
+}
+.bg-collectibles_362 {
+    background: url('/css_sprites-min.png') -1270px -1522px;
+}
+.bg-collectibles_363 {
+    background: url('/css_sprites-min.png') -1354px -1522px;
+}
+.bg-collectibles_364 {
+    background: url('/css_sprites-min.png') -1438px -1522px;
+}
+.bg-collectibles_365 {
+    background: url('/css_sprites-min.png') -1522px -1522px;
+}
+.bg-collectibles_366 {
+    background: url('/css_sprites-min.png') -1606px -10px;
+}
+.bg-collectibles_367 {
+    background: url('/css_sprites-min.png') -1606px -94px;
+}
+.bg-collectibles_368 {
+    background: url('/css_sprites-min.png') -1606px -178px;
+}
+.bg-collectibles_369 {
+    background: url('/css_sprites-min.png') -1606px -262px;
+}
+.bg-collectibles_370 {
+    background: url('/css_sprites-min.png') -1606px -346px;
+}
+.bg-collectibles_371 {
+    background: url('/css_sprites-min.png') -1606px -430px;
+}
+.bg-collectibles_372 {
+    background: url('/css_sprites-min.png') -1606px -514px;
+}
+.bg-collectibles_373 {
+    background: url('/css_sprites-min.png') -1606px -598px;
+}
+.bg-collectibles_374 {
+    background: url('/css_sprites-min.png') -1606px -682px;
+}
+.bg-collectibles_375 {
+    background: url('/css_sprites-min.png') -1606px -766px;
+}
+.bg-collectibles_376 {
+    background: url('/css_sprites-min.png') -1606px -850px;
+}
+.bg-collectibles_377 {
+    background: url('/css_sprites-min.png') -1606px -934px;
+}
+.bg-collectibles_378 {
+    background: url('/css_sprites-min.png') -1606px -1018px;
+}
+.bg-collectibles_379 {
+    background: url('/css_sprites-min.png') -1606px -1102px;
+}
+.bg-collectibles_380 {
+    background: url('/css_sprites-min.png') -1606px -1186px;
+}
+.bg-collectibles_381 {
+    background: url('/css_sprites-min.png') -1606px -1270px;
+}
+.bg-collectibles_382 {
+    background: url('/css_sprites-min.png') -1606px -1354px;
+}
+.bg-collectibles_383 {
+    background: url('/css_sprites-min.png') -1606px -1438px;
+}
+.bg-collectibles_384 {
+    background: url('/css_sprites-min.png') -1606px -1522px;
+}
+.bg-collectibles_385 {
+    background: url('/css_sprites-min.png') -10px -1606px;
+}
+.bg-collectibles_386 {
+    background: url('/css_sprites-min.png') -94px -1606px;
+}
+.bg-collectibles_387 {
+    background: url('/css_sprites-min.png') -178px -1606px;
+}
+.bg-collectibles_388 {
+    background: url('/css_sprites-min.png') -262px -1606px;
+}
+.bg-collectibles_389 {
+    background: url('/css_sprites-min.png') -346px -1606px;
+}
+.bg-collectibles_390 {
+    background: url('/css_sprites-min.png') -430px -1606px;
+}
+.bg-collectibles_391 {
+    background: url('/css_sprites-min.png') -514px -1606px;
+}
+.bg-collectibles_392 {
+    background: url('/css_sprites-min.png') -598px -1606px;
+}
+.bg-collectibles_393 {
+    background: url('/css_sprites-min.png') -682px -1606px;
+}
+.bg-collectibles_394 {
+    background: url('/css_sprites-min.png') -766px -1606px;
+}
+.bg-collectibles_395 {
+    background: url('/css_sprites-min.png') -850px -1606px;
+}
+.bg-collectibles_396 {
+    background: url('/css_sprites-min.png') -934px -1606px;
+}
+.bg-collectibles_397 {
+    background: url('/css_sprites-min.png') -1018px -1606px;
+}
+.bg-collectibles_398 {
+    background: url('/css_sprites-min.png') -1102px -1606px;
+}
+.bg-collectibles_399 {
+    background: url('/css_sprites-min.png') -1186px -1606px;
+}
+.bg-collectibles_400 {
+    background: url('/css_sprites-min.png') -1270px -1606px;
+}
+.bg-collectibles_401 {
+    background: url('/css_sprites-min.png') -1354px -1606px;
+}
+.bg-collectibles_402 {
+    background: url('/css_sprites-min.png') -1438px -1606px;
+}
+.bg-collectibles_403 {
+    background: url('/css_sprites-min.png') -1522px -1606px;
+}
+.bg-collectibles_404 {
+    background: url('/css_sprites-min.png') -1606px -1606px;
+}
+.bg-collectibles_405 {
+    background: url('/css_sprites-min.png') -1690px -10px;
+}
+.bg-collectibles_406 {
+    background: url('/css_sprites-min.png') -1690px -94px;
+}
+.bg-collectibles_407 {
+    background: url('/css_sprites-min.png') -1690px -178px;
+}
+.bg-collectibles_408 {
+    background: url('/css_sprites-min.png') -1690px -262px;
+}
+.bg-collectibles_409 {
+    background: url('/css_sprites-min.png') -1690px -346px;
+}
+.bg-collectibles_410 {
+    background: url('/css_sprites-min.png') -1690px -430px;
+}
+.bg-collectibles_411 {
+    background: url('/css_sprites-min.png') -1690px -514px;
+}
+.bg-collectibles_412 {
+    background: url('/css_sprites-min.png') -1690px -598px;
+}
+.bg-collectibles_413 {
+    background: url('/css_sprites-min.png') -1690px -682px;
+}
+.bg-collectibles_414 {
+    background: url('/css_sprites-min.png') -1690px -766px;
+}
+.bg-collectibles_415 {
+    background: url('/css_sprites-min.png') -1690px -850px;
+}
+.bg-collectibles_416 {
+    background: url('/css_sprites-min.png') -1690px -934px;
+}
+.bg-collectibles_417 {
+    background: url('/css_sprites-min.png') -1690px -1018px;
+}
+.bg-collectibles_418 {
+    background: url('/css_sprites-min.png') -1690px -1102px;
+}
+.bg-collectibles_419 {
+    background: url('/css_sprites-min.png') -1690px -1186px;
+}
+.bg-collectibles_420 {
+    background: url('/css_sprites-min.png') -1690px -1270px;
+}
+.bg-collectibles_421 {
+    background: url('/css_sprites-min.png') -1690px -1354px;
+}
+.bg-collectibles_422 {
+    background: url('/css_sprites-min.png') -1690px -1438px;
+}
+.bg-collectibles_423 {
+    background: url('/css_sprites-min.png') -1690px -1522px;
+}
+.bg-collectibles_424 {
+    background: url('/css_sprites-min.png') -1690px -1606px;
+}
+.bg-collectibles_425 {
+    background: url('/css_sprites-min.png') -10px -1690px;
+}
+.bg-collectibles_426 {
+    background: url('/css_sprites-min.png') -94px -1690px;
+}
+.bg-collectibles_427 {
+    background: url('/css_sprites-min.png') -178px -1690px;
+}
+.bg-collectibles_428 {
+    background: url('/css_sprites-min.png') -262px -1690px;
+}
+.bg-collectibles_429 {
+    background: url('/css_sprites-min.png') -346px -1690px;
+}
+.bg-collectibles_430 {
+    background: url('/css_sprites-min.png') -430px -1690px;
+}
+.bg-collectibles_431 {
+    background: url('/css_sprites-min.png') -514px -1690px;
+}
+.bg-collectibles_432 {
+    background: url('/css_sprites-min.png') -598px -1690px;
+}
+.bg-collectibles_433 {
+    background: url('/css_sprites-min.png') -682px -1690px;
+}
+.bg-collectibles_434 {
+    background: url('/css_sprites-min.png') -766px -1690px;
+}
+.bg-collectibles_435 {
+    background: url('/css_sprites-min.png') -850px -1690px;
+}
+.bg-collectibles_436 {
+    background: url('/css_sprites-min.png') -934px -1690px;
+}
+.bg-collectibles_437 {
+    background: url('/css_sprites-min.png') -1018px -1690px;
+}
+.bg-collectibles_438 {
+    background: url('/css_sprites-min.png') -1102px -1690px;
+}
+.bg-collectibles_439 {
+    background: url('/css_sprites-min.png') -1186px -1690px;
+}
+.bg-collectibles_440 {
+    background: url('/css_sprites-min.png') -1270px -1690px;
+}
+.bg-collectibles_441 {
+    background: url('/css_sprites-min.png') -1354px -1690px;
+}
+.bg-collectibles_442 {
+    background: url('/css_sprites-min.png') -1438px -1690px;
+}
+.bg-collectibles_443 {
+    background: url('/css_sprites-min.png') -1522px -1690px;
+}
+.bg-collectibles_444 {
+    background: url('/css_sprites-min.png') -1606px -1690px;
+}
+.bg-collectibles_445 {
+    background: url('/css_sprites-min.png') -1690px -1690px;
+}
+.bg-collectibles_446 {
+    background: url('/css_sprites-min.png') -1774px -10px;
+}
+.bg-collectibles_447 {
+    background: url('/css_sprites-min.png') -1774px -94px;
+}
+.bg-collectibles_448 {
+    background: url('/css_sprites-min.png') -1774px -178px;
+}
+.bg-collectibles_449 {
+    background: url('/css_sprites-min.png') -1774px -262px;
+}
+.bg-collectibles_450 {
+    background: url('/css_sprites-min.png') -1774px -346px;
+}
+.bg-collectibles_451 {
+    background: url('/css_sprites-min.png') -1774px -430px;
+}
+.bg-collectibles_452 {
+    background: url('/css_sprites-min.png') -1774px -514px;
+}
+.bg-collectibles_453 {
+    background: url('/css_sprites-min.png') -1774px -598px;
+}
+.bg-collectibles_454 {
+    background: url('/css_sprites-min.png') -1774px -682px;
+}
+.bg-collectibles_455 {
+    background: url('/css_sprites-min.png') -1774px -766px;
+}
+.bg-collectibles_456 {
+    background: url('/css_sprites-min.png') -1774px -850px;
+}
+.bg-collectibles_457 {
+    background: url('/css_sprites-min.png') -1774px -934px;
+}
+.bg-collectibles_458 {
+    background: url('/css_sprites-min.png') -1774px -1018px;
+}
+.bg-collectibles_459 {
+    background: url('/css_sprites-min.png') -1774px -1102px;
+}
+.bg-collectibles_460 {
+    background: url('/css_sprites-min.png') -1774px -1186px;
+}
+.bg-collectibles_461 {
+    background: url('/css_sprites-min.png') -1774px -1270px;
+}
+.bg-collectibles_462 {
+    background: url('/css_sprites-min.png') -1774px -1354px;
+}
+.bg-collectibles_463 {
+    background: url('/css_sprites-min.png') -1774px -1438px;
+}
+.bg-collectibles_464 {
+    background: url('/css_sprites-min.png') -1774px -1522px;
+}
+.bg-collectibles_465 {
+    background: url('/css_sprites-min.png') -1774px -1606px;
+}
+.bg-collectibles_466 {
+    background: url('/css_sprites-min.png') -1774px -1690px;
+}
+.bg-collectibles_467 {
+    background: url('/css_sprites-min.png') -10px -1774px;
+}
+.bg-collectibles_468 {
+    background: url('/css_sprites-min.png') -94px -1774px;
+}
+.bg-collectibles_469 {
+    background: url('/css_sprites-min.png') -178px -1774px;
+}
+.bg-collectibles_470 {
+    background: url('/css_sprites-min.png') -262px -1774px;
+}
+.bg-collectibles_471 {
+    background: url('/css_sprites-min.png') -346px -1774px;
+}
+.bg-collectibles_472 {
+    background: url('/css_sprites-min.png') -430px -1774px;
+}
+.bg-collectibles_473 {
+    background: url('/css_sprites-min.png') -514px -1774px;
+}
+.bg-collectibles_474 {
+    background: url('/css_sprites-min.png') -598px -1774px;
+}
+.bg-collectibles_475 {
+    background: url('/css_sprites-min.png') -682px -1774px;
+}
+.bg-collectibles_476 {
+    background: url('/css_sprites-min.png') -766px -1774px;
+}
+.bg-collectibles_477 {
+    background: url('/css_sprites-min.png') -850px -1774px;
+}
+.bg-collectibles_478 {
+    background: url('/css_sprites-min.png') -934px -1774px;
+}
+.bg-collectibles_479 {
+    background: url('/css_sprites-min.png') -1018px -1774px;
+}
+.bg-collectibles_480 {
+    background: url('/css_sprites-min.png') -1102px -1774px;
+}
+.bg-collectibles_481 {
+    background: url('/css_sprites-min.png') -1186px -1774px;
+}
+.bg-collectibles_482 {
+    background: url('/css_sprites-min.png') -1270px -1774px;
+}
+.bg-collectibles_483 {
+    background: url('/css_sprites-min.png') -1354px -1774px;
+}
+.bg-collectibles_484 {
+    background: url('/css_sprites-min.png') -1438px -1774px;
+}
+.bg-collectibles_485 {
+    background: url('/css_sprites-min.png') -1522px -1774px;
+}
+.bg-collectibles_486 {
+    background: url('/css_sprites-min.png') -1606px -1774px;
+}
+.bg-collectibles_487 {
+    background: url('/css_sprites-min.png') -1690px -1774px;
+}
+.bg-collectibles_488 {
+    background: url('/css_sprites-min.png') -1774px -1774px;
+}
+.bg-collectibles_489 {
+    background: url('/css_sprites-min.png') -1858px -10px;
+}
+.bg-collectibles_490 {
+    background: url('/css_sprites-min.png') -1858px -94px;
+}
+.bg-collectibles_491 {
+    background: url('/css_sprites-min.png') -1858px -178px;
+}
+.bg-collectibles_492 {
+    background: url('/css_sprites-min.png') -1858px -262px;
+}
+.bg-collectibles_493 {
+    background: url('/css_sprites-min.png') -1858px -346px;
+}
+.bg-collectibles_494 {
+    background: url('/css_sprites-min.png') -1858px -430px;
+}
+.bg-collectibles_495 {
+    background: url('/css_sprites-min.png') -1858px -514px;
+}
+.bg-collectibles_496 {
+    background: url('/css_sprites-min.png') -1858px -598px;
+}
+.bg-collectibles_497 {
+    background: url('/css_sprites-min.png') -1858px -682px;
+}
+.bg-collectibles_498 {
+    background: url('/css_sprites-min.png') -1858px -766px;
+}
+.bg-collectibles_499 {
+    background: url('/css_sprites-min.png') -1858px -850px;
+}
+.bg-collectibles_500 {
+    background: url('/css_sprites-min.png') -1858px -934px;
+}
+.bg-collectibles_501 {
+    background: url('/css_sprites-min.png') -1858px -1018px;
+}
+.bg-collectibles_502 {
+    background: url('/css_sprites-min.png') -1858px -1102px;
+}
+.bg-collectibles_503 {
+    background: url('/css_sprites-min.png') -1858px -1186px;
+}
+.bg-collectibles_504 {
+    background: url('/css_sprites-min.png') -1858px -1270px;
+}
+.bg-collectibles_505 {
+    background: url('/css_sprites-min.png') -1858px -1354px;
+}
+.bg-collectibles_506 {
+    background: url('/css_sprites-min.png') -1858px -1438px;
+}
+.bg-collectibles_507 {
+    background: url('/css_sprites-min.png') -1858px -1522px;
+}
+.bg-collectibles_508 {
+    background: url('/css_sprites-min.png') -1858px -1606px;
+}
+.bg-collectibles_509 {
+    background: url('/css_sprites-min.png') -1858px -1690px;
+}
+.bg-collectibles_510 {
+    background: url('/css_sprites-min.png') -1858px -1774px;
+}
+.bg-collectibles_511 {
+    background: url('/css_sprites-min.png') -10px -1858px;
+}
+.bg-collectibles_512 {
+    background: url('/css_sprites-min.png') -94px -1858px;
+}
+.bg-collectibles_513 {
+    background: url('/css_sprites-min.png') -178px -1858px;
+}
+.bg-collectibles_514 {
+    background: url('/css_sprites-min.png') -262px -1858px;
+}
+.bg-collectibles_515 {
+    background: url('/css_sprites-min.png') -346px -1858px;
+}
+.bg-collectibles_516 {
+    background: url('/css_sprites-min.png') -430px -1858px;
+}
+.bg-collectibles_517 {
+    background: url('/css_sprites-min.png') -514px -1858px;
+}
+.bg-collectibles_518 {
+    background: url('/css_sprites-min.png') -598px -1858px;
+}
+.bg-collectibles_519 {
+    background: url('/css_sprites-min.png') -682px -1858px;
+}
+.bg-collectibles_520 {
+    background: url('/css_sprites-min.png') -766px -1858px;
+}
+.bg-collectibles_521 {
+    background: url('/css_sprites-min.png') -850px -1858px;
+}
+.bg-collectibles_522 {
+    background: url('/css_sprites-min.png') -934px -1858px;
+}
+.bg-collectibles_523 {
+    background: url('/css_sprites-min.png') -1018px -1858px;
+}
+.bg-collectibles_524 {
+    background: url('/css_sprites-min.png') -1102px -1858px;
+}
+.bg-collectibles_525 {
+    background: url('/css_sprites-min.png') -1186px -1858px;
+}
+.bg-collectibles_526 {
+    background: url('/css_sprites-min.png') -1270px -1858px;
+}
+.bg-collectibles_527 {
+    background: url('/css_sprites-min.png') -1354px -1858px;
+}
+.bg-collectibles_528 {
+    background: url('/css_sprites-min.png') -1438px -1858px;
+}
+.bg-collectibles_529 {
+    background: url('/css_sprites-min.png') -1522px -1858px;
+}
+.bg-collectibles_530 {
+    background: url('/css_sprites-min.png') -1606px -1858px;
+}
+.bg-collectibles_531 {
+    background: url('/css_sprites-min.png') -1690px -1858px;
+}
+.bg-collectibles_532 {
+    background: url('/css_sprites-min.png') -1774px -1858px;
+}
+.bg-collectibles_533 {
+    background: url('/css_sprites-min.png') -1858px -1858px;
+}
+.bg-collectibles_534 {
+    background: url('/css_sprites-min.png') -1942px -10px;
+}
+.bg-collectibles_535 {
+    background: url('/css_sprites-min.png') -1942px -94px;
+}
+.bg-collectibles_536 {
+    background: url('/css_sprites-min.png') -1942px -178px;
+}
+.bg-collectibles_537 {
+    background: url('/css_sprites-min.png') -1942px -262px;
+}
+.bg-collectibles_538 {
+    background: url('/css_sprites-min.png') -1942px -346px;
+}
+.bg-collectibles_539 {
+    background: url('/css_sprites-min.png') -1942px -430px;
+}
+.bg-collectibles_540 {
+    background: url('/css_sprites-min.png') -1942px -514px;
+}
+.bg-collectibles_541 {
+    background: url('/css_sprites-min.png') -1942px -598px;
+}
+.bg-collectibles_542 {
+    background: url('/css_sprites-min.png') -1942px -682px;
+}
+.bg-collectibles_543 {
+    background: url('/css_sprites-min.png') -1942px -766px;
+}
+.bg-collectibles_544 {
+    background: url('/css_sprites-min.png') -1942px -850px;
+}
+.bg-collectibles_545 {
+    background: url('/css_sprites-min.png') -1942px -934px;
+}
+.bg-collectibles_546 {
+    background: url('/css_sprites-min.png') -1942px -1018px;
+}
+.bg-collectibles_547 {
+    background: url('/css_sprites-min.png') -1942px -1102px;
+}
+.bg-collectibles_548 {
+    background: url('/css_sprites-min.png') -1942px -1186px;
+}
+.bg-collectibles_549 {
+    background: url('/css_sprites-min.png') -1942px -1270px;
+}
+.bg-collectibles_550 {
+    background: url('/css_sprites-min.png') -1942px -1354px;
+}
+.bg-collectibles_551 {
+    background: url('/css_sprites-min.png') -1942px -1438px;
+}
+.bg-collectibles_552 {
+    background: url('/css_sprites-min.png') -1942px -1522px;
+}
+.bg-collectibles_553 {
+    background: url('/css_sprites-min.png') -1942px -1606px;
+}
+.bg-collectibles_554 {
+    background: url('/css_sprites-min.png') -1942px -1690px;
+}
+.bg-collectibles_555 {
+    background: url('/css_sprites-min.png') -1942px -1774px;
+}
+.bg-collectibles_556 {
+    background: url('/css_sprites-min.png') -1942px -1858px;
+}
+.bg-collectibles_557 {
+    background: url('/css_sprites-min.png') -10px -1942px;
+}
+.bg-collectibles_558 {
+    background: url('/css_sprites-min.png') -94px -1942px;
+}
+.bg-collectibles_559 {
+    background: url('/css_sprites-min.png') -178px -1942px;
+}
+.bg-collectibles_560 {
+    background: url('/css_sprites-min.png') -262px -1942px;
+}
+.bg-collectibles_561 {
+    background: url('/css_sprites-min.png') -346px -1942px;
+}
+.bg-collectibles_562 {
+    background: url('/css_sprites-min.png') -430px -1942px;
+}
+.bg-collectibles_563 {
+    background: url('/css_sprites-min.png') -514px -1942px;
+}
+.bg-collectibles_564 {
+    background: url('/css_sprites-min.png') -598px -1942px;
+}
+.bg-collectibles_565 {
+    background: url('/css_sprites-min.png') -682px -1942px;
+}
+.bg-collectibles_566 {
+    background: url('/css_sprites-min.png') -766px -1942px;
+}
+.bg-collectibles_567 {
+    background: url('/css_sprites-min.png') -850px -1942px;
+}
+.bg-collectibles_568 {
+    background: url('/css_sprites-min.png') -934px -1942px;
+}
+.bg-collectibles_569 {
+    background: url('/css_sprites-min.png') -1018px -1942px;
+}
+.bg-collectibles_570 {
+    background: url('/css_sprites-min.png') -1102px -1942px;
+}
+.bg-collectibles_571 {
+    background: url('/css_sprites-min.png') -1186px -1942px;
+}
+.bg-collectibles_572 {
+    background: url('/css_sprites-min.png') -1270px -1942px;
+}
+.bg-collectibles_573 {
+    background: url('/css_sprites-min.png') -1354px -1942px;
+}
+.bg-collectibles_574 {
+    background: url('/css_sprites-min.png') -1438px -1942px;
+}
+.bg-collectibles_575 {
+    background: url('/css_sprites-min.png') -1522px -1942px;
+}
+.bg-collectibles_576 {
+    background: url('/css_sprites-min.png') -1606px -1942px;
+}
+.bg-collectibles_577 {
+    background: url('/css_sprites-min.png') -1690px -1942px;
+}
+.bg-collectibles_578 {
+    background: url('/css_sprites-min.png') -1774px -1942px;
+}
+.bg-collectibles_579 {
+    background: url('/css_sprites-min.png') -1858px -1942px;
+}
+.bg-collectibles_580 {
+    background: url('/css_sprites-min.png') -1942px -1942px;
+}
+.bg-collectibles_581 {
+    background: url('/css_sprites-min.png') -2026px -10px;
+}
+.bg-collectibles_582 {
+    background: url('/css_sprites-min.png') -2026px -94px;
+}
+.bg-collectibles_583 {
+    background: url('/css_sprites-min.png') -2026px -178px;
+}
+.bg-collectibles_584 {
+    background: url('/css_sprites-min.png') -2026px -262px;
+}
+.bg-collectibles_585 {
+    background: url('/css_sprites-min.png') -2026px -346px;
+}
+.bg-collectibles_586 {
+    background: url('/css_sprites-min.png') -2026px -430px;
+}
+.bg-collectibles_588 {
+    background: url('/css_sprites-min.png') -2026px -514px;
+}
+.bg-collectibles_589 {
+    background: url('/css_sprites-min.png') -2026px -598px;
+}
+.bg-collectibles_590 {
+    background: url('/css_sprites-min.png') -2026px -682px;
+}
+.bg-collectibles_591 {
+    background: url('/css_sprites-min.png') -2026px -766px;
+}
+.bg-collectibles_592 {
+    background: url('/css_sprites-min.png') -2026px -850px;
+}
+.bg-collectibles_593 {
+    background: url('/css_sprites-min.png') -2026px -934px;
+}
+.bg-collectibles_594 {
+    background: url('/css_sprites-min.png') -2026px -1018px;
+}
+.bg-collectibles_595 {
+    background: url('/css_sprites-min.png') -2026px -1102px;
+}
+.bg-collectibles_596 {
+    background: url('/css_sprites-min.png') -2026px -1186px;
+}
+.bg-collectibles_597 {
+    background: url('/css_sprites-min.png') -2026px -1270px;
+}
+.bg-collectibles_598 {
+    background: url('/css_sprites-min.png') -2026px -1354px;
+}
+.bg-collectibles_599 {
+    background: url('/css_sprites-min.png') -2026px -1438px;
+}
+.bg-collectibles_600 {
+    background: url('/css_sprites-min.png') -2026px -1522px;
+}
+.bg-collectibles_601 {
+    background: url('/css_sprites-min.png') -2026px -1606px;
+}
+.bg-collectibles_602 {
+    background: url('/css_sprites-min.png') -2026px -1690px;
+}
+.bg-collectibles_603 {
+    background: url('/css_sprites-min.png') -2026px -1774px;
+}
+.bg-collectibles_604 {
+    background: url('/css_sprites-min.png') -2026px -1858px;
+}
+.bg-collectibles_605 {
+    background: url('/css_sprites-min.png') -2026px -1942px;
+}
+.bg-collectibles_606 {
+    background: url('/css_sprites-min.png') -10px -2026px;
+}
+.bg-collectibles_607 {
+    background: url('/css_sprites-min.png') -94px -2026px;
+}
+.bg-collectibles_608 {
+    background: url('/css_sprites-min.png') -178px -2026px;
+}
+.bg-collectibles_609 {
+    background: url('/css_sprites-min.png') -262px -2026px;
+}
+.bg-collectibles_610 {
+    background: url('/css_sprites-min.png') -346px -2026px;
+}
+.bg-collectibles_611 {
+    background: url('/css_sprites-min.png') -430px -2026px;
+}
+.bg-collectibles_612 {
+    background: url('/css_sprites-min.png') -514px -2026px;
+}
+.bg-collectibles_614 {
+    background: url('/css_sprites-min.png') -598px -2026px;
+}
+.bg-collectibles_615 {
+    background: url('/css_sprites-min.png') -682px -2026px;
+}
+.bg-collectibles_616 {
+    background: url('/css_sprites-min.png') -766px -2026px;
+}
+.bg-collectibles_617 {
+    background: url('/css_sprites-min.png') -850px -2026px;
+}
+.bg-collectibles_618 {
+    background: url('/css_sprites-min.png') -934px -2026px;
+}
+.bg-collectibles_619 {
+    background: url('/css_sprites-min.png') -1018px -2026px;
+}
+.bg-collectibles_621 {
+    background: url('/css_sprites-min.png') -1102px -2026px;
+}
+.bg-collectibles_622 {
+    background: url('/css_sprites-min.png') -1186px -2026px;
+}
+.bg-collectibles_623 {
+    background: url('/css_sprites-min.png') -1270px -2026px;
+}
+.bg-collectibles_624 {
+    background: url('/css_sprites-min.png') -1354px -2026px;
+}
+.bg-collectibles_625 {
+    background: url('/css_sprites-min.png') -1438px -2026px;
+}
+.bg-collectibles_626 {
+    background: url('/css_sprites-min.png') -1522px -2026px;
+}
+.bg-collectibles_627 {
+    background: url('/css_sprites-min.png') -1606px -2026px;
+}
+.bg-collectibles_628 {
+    background: url('/css_sprites-min.png') -1690px -2026px;
+}
+.bg-collectibles_629 {
+    background: url('/css_sprites-min.png') -1774px -2026px;
+}
+.bg-collectibles_631 {
+    background: url('/css_sprites-min.png') -1858px -2026px;
+}
+.bg-collectibles_632 {
+    background: url('/css_sprites-min.png') -1942px -2026px;
+}
+.bg-collectibles_633 {
+    background: url('/css_sprites-min.png') -2026px -2026px;
+}
+.bg-collectibles_634 {
+    background: url('/css_sprites-min.png') -2110px -10px;
+}
+.bg-collectibles_635 {
+    background: url('/css_sprites-min.png') -2110px -94px;
+}
+.bg-collectibles_636 {
+    background: url('/css_sprites-min.png') -2110px -178px;
+}
+.bg-collectibles_637 {
+    background: url('/css_sprites-min.png') -2110px -262px;
+}
+.bg-collectibles_638 {
+    background: url('/css_sprites-min.png') -2110px -346px;
+}
+.bg-collectibles_639 {
+    background: url('/css_sprites-min.png') -2110px -430px;
+}
+.bg-collectibles_640 {
+    background: url('/css_sprites-min.png') -2110px -514px;
+}
+.bg-collectibles_641 {
+    background: url('/css_sprites-min.png') -2110px -598px;
+}
+.bg-collectibles_642 {
+    background: url('/css_sprites-min.png') -2110px -682px;
+}
+.bg-collectibles_643 {
+    background: url('/css_sprites-min.png') -2110px -766px;
+}
+.bg-collectibles_644 {
+    background: url('/css_sprites-min.png') -2110px -850px;
+}
+.bg-collectibles_645 {
+    background: url('/css_sprites-min.png') -2110px -934px;
+}
+.bg-collectibles_646 {
+    background: url('/css_sprites-min.png') -2110px -1018px;
+}
+.bg-collectibles_647 {
+    background: url('/css_sprites-min.png') -2110px -1102px;
+}
+.bg-collectibles_649 {
+    background: url('/css_sprites-min.png') -2110px -1186px;
+}
+.bg-collectibles_650 {
+    background: url('/css_sprites-min.png') -2110px -1270px;
+}
+.bg-collectibles_651 {
+    background: url('/css_sprites-min.png') -2110px -1354px;
+}
+.bg-collectibles_652 {
+    background: url('/css_sprites-min.png') -2110px -1438px;
+}
+.bg-collectibles_653 {
+    background: url('/css_sprites-min.png') -2110px -1522px;
+}
+.bg-collectibles_654 {
+    background: url('/css_sprites-min.png') -2110px -1606px;
+}
+.bg-collectibles_655 {
+    background: url('/css_sprites-min.png') -2110px -1690px;
+}
+.bg-collectibles_656 {
+    background: url('/css_sprites-min.png') -2110px -1774px;
+}
+.bg-collectibles_657 {
+    background: url('/css_sprites-min.png') -2110px -1858px;
+}
+.bg-collectibles_658 {
+    background: url('/css_sprites-min.png') -2110px -1942px;
+}
+.bg-collectibles_659 {
+    background: url('/css_sprites-min.png') -2110px -2026px;
+}
+.bg-collectibles_660 {
+    background: url('/css_sprites-min.png') -10px -2110px;
+}
+.bg-collectibles_661 {
+    background: url('/css_sprites-min.png') -94px -2110px;
+}
+.bg-collectibles_662 {
+    background: url('/css_sprites-min.png') -178px -2110px;
+}
+.bg-collectibles_663 {
+    background: url('/css_sprites-min.png') -262px -2110px;
+}
+.bg-collectibles_664 {
+    background: url('/css_sprites-min.png') -346px -2110px;
+}
+.bg-collectibles_665 {
+    background: url('/css_sprites-min.png') -430px -2110px;
+}
+.bg-collectibles_667 {
+    background: url('/css_sprites-min.png') -514px -2110px;
+}
+.bg-collectibles_668 {
+    background: url('/css_sprites-min.png') -598px -2110px;
+}
+.bg-collectibles_669 {
+    background: url('/css_sprites-min.png') -682px -2110px;
+}
+.bg-collectibles_670 {
+    background: url('/css_sprites-min.png') -766px -2110px;
+}
+.bg-collectibles_671 {
+    background: url('/css_sprites-min.png') -850px -2110px;
+}
+.bg-collectibles_672 {
+    background: url('/css_sprites-min.png') -934px -2110px;
+}
+.bg-collectibles_673 {
+    background: url('/css_sprites-min.png') -1018px -2110px;
+}
+.bg-collectibles_674 {
+    background: url('/css_sprites-min.png') -1102px -2110px;
+}
+.bg-collectibles_675 {
+    background: url('/css_sprites-min.png') -1186px -2110px;
+}
+.bg-collectibles_676 {
+    background: url('/css_sprites-min.png') -1270px -2110px;
+}
+.bg-collectibles_677 {
+    background: url('/css_sprites-min.png') -1354px -2110px;
+}
+.bg-collectibles_678 {
+    background: url('/css_sprites-min.png') -1438px -2110px;
+}
+.bg-collectibles_679 {
+    background: url('/css_sprites-min.png') -1522px -2110px;
+}
+.bg-collectibles_680 {
+    background: url('/css_sprites-min.png') -1606px -2110px;
+}
+.bg-collectibles_681 {
+    background: url('/css_sprites-min.png') -1690px -2110px;
+}
+.bg-collectibles_682 {
+    background: url('/css_sprites-min.png') -1774px -2110px;
+}
+.bg-collectibles_683 {
+    background: url('/css_sprites-min.png') -1858px -2110px;
+}
+.bg-collectibles_684 {
+    background: url('/css_sprites-min.png') -1942px -2110px;
+}
+.bg-collectibles_685 {
+    background: url('/css_sprites-min.png') -2026px -2110px;
+}
+.bg-collectibles_686 {
+    background: url('/css_sprites-min.png') -2110px -2110px;
+}
+.bg-collectibles_687 {
+    background: url('/css_sprites-min.png') -2194px -10px;
+}
+.bg-collectibles_688 {
+    background: url('/css_sprites-min.png') -2194px -94px;
+}
+.bg-collectibles_689 {
+    background: url('/css_sprites-min.png') -2194px -178px;
+}
+.bg-collectibles_690 {
+    background: url('/css_sprites-min.png') -2194px -262px;
+}
+.bg-collectibles_691 {
+    background: url('/css_sprites-min.png') -2194px -346px;
+}
+.bg-collectibles_692 {
+    background: url('/css_sprites-min.png') -2194px -430px;
+}
+.bg-collectibles_693 {
+    background: url('/css_sprites-min.png') -2194px -514px;
+}
+.bg-collectibles_694 {
+    background: url('/css_sprites-min.png') -2194px -598px;
+}
+.bg-collectibles_695 {
+    background: url('/css_sprites-min.png') -2194px -682px;
+}
+.bg-collectibles_696 {
+    background: url('/css_sprites-min.png') -2194px -766px;
+}
+.bg-collectibles_697 {
+    background: url('/css_sprites-min.png') -2194px -850px;
+}
+.bg-collectibles_698 {
+    background: url('/css_sprites-min.png') -2194px -934px;
+}
+.bg-collectibles_699 {
+    background: url('/css_sprites-min.png') -2194px -1018px;
+}
+.bg-collectibles_700 {
+    background: url('/css_sprites-min.png') -2194px -1102px;
+}
+.bg-collectibles_701 {
+    background: url('/css_sprites-min.png') -2194px -1186px;
+}
+.bg-collectibles_702 {
+    background: url('/css_sprites-min.png') -2194px -1270px;
+}
+.bg-collectibles_703 {
+    background: url('/css_sprites-min.png') -2194px -1354px;
+}
+.bg-collectibles_704 {
+    background: url('/css_sprites-min.png') -2194px -1438px;
+}
+.bg-collectibles_705 {
+    background: url('/css_sprites-min.png') -2194px -1522px;
+}
+.bg-collectibles_706 {
+    background: url('/css_sprites-min.png') -2194px -1606px;
+}
+.bg-collectibles_707 {
+    background: url('/css_sprites-min.png') -2194px -1690px;
+}
+.bg-collectibles_708 {
+    background: url('/css_sprites-min.png') -2194px -1774px;
+}
+.bg-collectibles_709 {
+    background: url('/css_sprites-min.png') -2194px -1858px;
+}
+.bg-collectibles_710 {
+    background: url('/css_sprites-min.png') -2194px -1942px;
+}
+.bg-collectibles_711 {
+    background: url('/css_sprites-min.png') -2194px -2026px;
+}
+.bg-collectibles_712 {
+    background: url('/css_sprites-min.png') -2194px -2110px;
+}
+.bg-collectibles_713 {
+    background: url('/css_sprites-min.png') -10px -2194px;
+}
+.bg-collectibles_714 {
+    background: url('/css_sprites-min.png') -94px -2194px;
+}
+.bg-collectibles_715 {
+    background: url('/css_sprites-min.png') -178px -2194px;
+}
+.bg-collectibles_716 {
+    background: url('/css_sprites-min.png') -262px -2194px;
+}
+.bg-collectibles_717 {
+    background: url('/css_sprites-min.png') -346px -2194px;
+}
+.bg-collectibles_718 {
+    background: url('/css_sprites-min.png') -430px -2194px;
+}
+.bg-collectibles_719 {
+    background: url('/css_sprites-min.png') -514px -2194px;
+}
+.bg-collectibles_720 {
+    background: url('/css_sprites-min.png') -598px -2194px;
+}
+.bg-collectibles_721 {
+    background: url('/css_sprites-min.png') -682px -2194px;
+}
+.bg-collectibles_722 {
+    background: url('/css_sprites-min.png') -766px -2194px;
+}
+.bg-collectibles_723 {
+    background: url('/css_sprites-min.png') -850px -2194px;
+}
+.bg-collectibles_724 {
+    background: url('/css_sprites-min.png') -934px -2194px;
+}
+.bg-collectibles_725 {
+    background: url('/css_sprites-min.png') -1018px -2194px;
+}
+.bg-collectibles_726 {
+    background: url('/css_sprites-min.png') -1102px -2194px;
+}
+.bg-collectibles_727 {
+    background: url('/css_sprites-min.png') -1186px -2194px;
+}
+.bg-collectibles_728 {
+    background: url('/css_sprites-min.png') -1270px -2194px;
+}
+.bg-collectibles_729 {
+    background: url('/css_sprites-min.png') -1354px -2194px;
+}
