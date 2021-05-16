@@ -29,7 +29,7 @@
           </div>
           <div class="recipes-block" v-for="(recipe, recipeId) in getRecipesFromId(itemId)" v-bind:key="recipeId" v-bind:class="{ 'recipeCraftable':recipe.isCraftable}">
               <div class="recipe-block" v-for="(singleRecipe, singleRecipeId) in recipe" v-bind:key="singleRecipeId">
-                <img v-bind:src="getIconFromPickupId(singleRecipe)"/>
+                <div class="bg-pickup" :class="'bg-pickup-'+singleRecipe"></div>
               </div>
           </div>
           <div v-if="!getRecipesFromId(itemId)">

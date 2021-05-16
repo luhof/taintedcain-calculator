@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import Ads from 'vue-google-adsense'
-import './items-spritesheet.css';
+require('./assets/items-spritesheet.css')
+require('./assets/pickups-spritesheet.css')
 
 Vue.config.productionTip = false
 
