@@ -13,6 +13,7 @@ You manually enter pickups available on your floor and it show items that can be
 ## TODO
 - dynamic recipe generation test?
 - "plan to craft" and "favorite" modes
+- "wildcard" pickup (suggested by catorze83)
 
 
 ## Project setup
