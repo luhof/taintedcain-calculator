@@ -16,7 +16,16 @@
         <input type="checkbox" v-model="hideDisabled"/>
         Hide non-craftable items
       </label>
-      <button @click="clear">Clear</button>
+      <div class="row">
+        <SelectComponent
+            :items="orderByItems"
+            title="Sort by"
+            v-model="orderBy"
+            item-value="index"
+            style="margin-right: 8px"
+        />
+        <button @click="clear" class="">Clear</button>
+      </div>
       <input placeholder="Search..." v-model="search"/>
     </div>
     <div id="items-wrapper">
@@ -48,6 +57,9 @@ export default {
   props: {
     msg: String,
   },
+  components: {
+    SelectComponent: () => import("./SelectComponent.vue")
+  },
   data() {
     return {
       items: require("../assets/items.json"),
@@ -58,6 +70,7 @@ export default {
       anyPickups: false,
       hideDisabled: false,
       pickups: new Array(25).fill(0),
+      orderBy: null,
       itemHoverStates: {},
       search: "",
       pickupDefinitions: [[
@@ -98,19 +111,36 @@ export default {
     };
   },
   computed: {
+    orderByItems() {
+      return [
+        {text: "Not selected", index: null},
+        ...this.pickupDefinitionsFlat
+      ]
+    },
+    pickupDefinitionsFlat() {
+      const array = [];
+      this.pickupDefinitions.forEach(chunk => array.push(...chunk));
+      return array;
+    },
     visibleItems(){
-      return this.computedItems.filter(i => i.isVisible);
+      const list = this.computedItems.filter(i => i.isVisible)
+      if (this.orderBy !== null) {
+        list.sort((first, second) => {
+          let firstIncludes = this.checkIfItemIncludesPickup(first, this.orderBy);
+          let secondIncludes = this.checkIfItemIncludesPickup(second, this.orderBy);
+          console.debug("includes", firstIncludes, secondIncludes);
+          if (firstIncludes && !secondIncludes) {
+            return -1
+          } else if (!firstIncludes && secondIncludes) {
+            return 1
+          } else {
+            return 0;
+          }
+        })
+      }
+      return list;
     },
     computedItems() {
-      return Object.entries(this.items).map(([itemId, item]) => {
-        const isCraftable = this.craftableItemIds.includes(itemId);
-        const isVisible = !(this.hideDisabled && !isCraftable) &&
-            (!this.search || item.name.toLowerCase().includes(this.search.toLowerCase()))
-
-        return Object.assign(item, {id: itemId, isCraftable, isVisible})
-      });
-    },
-    computedRecipes() {
       return this.recipes.map(item => {
         let itemIsCraftable = false;
 
@@ -120,16 +150,24 @@ export default {
           Object.assign(recipe, {isCraftable: recipeCraftable})
         })
 
-        Object.assign(item, {isCraftable: itemIsCraftable});
+
+        Object.assign(item, this.items[item.id])
+        const isVisible = !(this.hideDisabled && !itemIsCraftable) &&
+            (!this.search || item.name.toLowerCase().includes(this.search.toLowerCase()))
+
+        Object.assign(item, {
+          id: item.ID,
+          isCraftable: itemIsCraftable,
+          isVisible
+        });
+
         return item;
       });
-    },
-    craftableItemIds() {
-      return this.computedRecipes.filter(item => item.isCraftable).map(item => item.ID)
     }
   },
   methods: {
     clear() {
+      this.orderBy = null
       for (let i = 0; i < this.pickups.length; i++) {
         Vue.set(this.pickups, i, 0);
       }
@@ -152,6 +190,25 @@ export default {
     checkIfRecipeDoable(recipe) {
       return this.pickups.every((count, index) => count >= this.countOccurences(recipe, index+1));
     },
+    checkIfItemIncludesPickup(item, pickup = null) {
+      if (pickup === null) return false;
+      let isIncludes = false;
+      item.recipes.filter(recipe => recipe.isCraftable).forEach(recipe => {
+        if(isIncludes) return;
+        console.debug("recipe includes", {
+          recipe,
+          pickup,
+          pickupString: pickup.toString(),
+          1: recipe.includes(pickup),
+          2: recipe.includes(pickup.toString()),
+          3: recipe.includes('8'),
+          4: recipe.includes('10')
+        })
+        if(recipe.includes((pickup + 1).toString())) isIncludes = true;
+      })
+
+      return isIncludes;
+    },
     countOccurences(array, value) {
       let num = 0;
       for (let element of array) {
@@ -164,6 +221,10 @@ export default {
 </script>
 
 <style scoped>
+.row {
+  display: flex;
+  flex-direction: row;
+}
 .item.disabled .item-img {
   opacity: 0.2;
 }
