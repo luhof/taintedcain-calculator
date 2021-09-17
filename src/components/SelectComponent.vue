@@ -54,10 +54,8 @@ export default {
   methods: {
     handleSelectClick(){
       this.isOpen = true;
-      console.debug("handleSelectClick")
     },
     handleOptionClick(item) {
-      console.debug("handleOptionClick")
       this.isOpen = false;
       this.$emit("input", item[this.itemValue]);
     }

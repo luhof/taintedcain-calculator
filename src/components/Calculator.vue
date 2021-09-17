@@ -128,7 +128,7 @@ export default {
         list.sort((first, second) => {
           let firstIncludes = this.checkIfItemIncludesPickup(first, this.orderBy);
           let secondIncludes = this.checkIfItemIncludesPickup(second, this.orderBy);
-          console.debug("includes", firstIncludes, secondIncludes);
+
           if (firstIncludes && !secondIncludes) {
             return -1
           } else if (!firstIncludes && secondIncludes) {
@@ -195,15 +195,6 @@ export default {
       let isIncludes = false;
       item.recipes.filter(recipe => recipe.isCraftable).forEach(recipe => {
         if(isIncludes) return;
-        console.debug("recipe includes", {
-          recipe,
-          pickup,
-          pickupString: pickup.toString(),
-          1: recipe.includes(pickup),
-          2: recipe.includes(pickup.toString()),
-          3: recipe.includes('8'),
-          4: recipe.includes('10')
-        })
         if(recipe.includes((pickup + 1).toString())) isIncludes = true;
       })
 
