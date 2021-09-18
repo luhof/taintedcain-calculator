@@ -24,12 +24,15 @@
             item-value="index"
             style="margin-right: 8px"
         />
-        <button @click="clear" class="">Clear</button>
+        <button @click="clear" style="margin-left: auto;">Clear</button>
       </div>
       <input placeholder="Search..." v-model="search"/>
     </div>
     <div id="items-wrapper">
-      <div class="item" v-for="item in visibleItems" v-bind:key="item.id" v-bind:class="{ 'disabled': anyPickups && !item.isCraftable, 'craftable': item.isCraftable}">
+      <div class="item" v-for="item in visibleItems"
+           v-bind:key="item.id"
+           :class="computeItemClass(item)"
+      >
         <div class="bg-collectible" :class="'bg-collectibles_'+item.id" @mouseenter="setHover(item.id, true)" @mouseleave="setHover(item.id, false)"></div>
         <div class="recipes-modal" v-if="itemHoverStates[item.id]" v-once>
           <div class="recipes-desc">
@@ -126,8 +129,8 @@ export default {
       const list = this.computedItems.filter(i => i.isVisible)
       if (this.orderBy !== null) {
         list.sort((first, second) => {
-          let firstIncludes = this.checkIfItemIncludesPickup(first, this.orderBy);
-          let secondIncludes = this.checkIfItemIncludesPickup(second, this.orderBy);
+          let firstIncludes = this.checkIfItemIncludesPickup(first);
+          let secondIncludes = this.checkIfItemIncludesPickup(second);
 
           if (firstIncludes && !secondIncludes) {
             return -1
@@ -155,11 +158,10 @@ export default {
         const isVisible = !(this.hideDisabled && !itemIsCraftable) &&
             (!this.search || item.name.toLowerCase().includes(this.search.toLowerCase()))
 
-        Object.assign(item, {
-          id: item.ID,
-          isCraftable: itemIsCraftable,
-          isVisible
-        });
+        item.id = item.ID;
+        item.isCraftable = itemIsCraftable
+        item.isVisible = isVisible;
+        item.isPriorityOrder = this.checkIsPriorityOrder(item);
 
         return item;
       });
@@ -179,6 +181,13 @@ export default {
         Vue.delete(this.itemHoverStates, itemId);
       }
     },
+    computeItemClass(item){
+      return {
+        'disabled': this.anyPickups && !item.isCraftable,
+        'craftable': item.isCraftable,
+        "priority-order": item.isPriorityOrder
+      }
+    },
     getIconFromPickupId(pickupId) {
       return `./bagicons/${pickupId}.png`;
     },
@@ -187,15 +196,21 @@ export default {
       if (recipeItem) return recipeItem.recipes;
       else return null;
     },
+    checkIsPriorityOrder(item) {
+      return this.orderBy !== null &&
+          item.recipes.findIndex(recipe => {
+            return recipe.isCraftable && recipe.includes((this.orderBy + 1).toString())
+          }) !== -1
+    },
     checkIfRecipeDoable(recipe) {
       return this.pickups.every((count, index) => count >= this.countOccurences(recipe, index+1));
     },
-    checkIfItemIncludesPickup(item, pickup = null) {
-      if (pickup === null) return false;
+    checkIfItemIncludesPickup(item) {
+      if (this.orderBy === null) return false;
       let isIncludes = false;
       item.recipes.filter(recipe => recipe.isCraftable).forEach(recipe => {
         if(isIncludes) return;
-        if(recipe.includes((pickup + 1).toString())) isIncludes = true;
+        if(recipe.includes((this.orderBy + 1).toString())) isIncludes = true;
       })
 
       return isIncludes;
@@ -218,6 +233,9 @@ export default {
 }
 .item.disabled .item-img {
   opacity: 0.2;
+}
+.item.priority-order {
+  background-color: lightgreen;
 }
 
 .pickup {
