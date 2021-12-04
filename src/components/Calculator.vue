@@ -16,23 +16,35 @@
         <input type="checkbox" v-model="hideDisabled"/>
         Hide non-craftable items
       </label>
-      <button @click="clear">Clear</button>
+      <div class="row">
+        <SelectComponent
+            :items="orderByItems"
+            title="Sort by"
+            v-model="orderBy"
+            item-value="index"
+            style="margin-right: 8px"
+        />
+        <button @click="clear" style="margin-left: auto;">Clear</button>
+      </div>
       <input placeholder="Search..." v-model="search"/>
     </div>
     <div id="items-wrapper">
-      <div class="item" v-for="(item,itemId) in visibleItems" v-bind:key="itemId" v-bind:class="{ 'disabled': anyPickups && !item.isCraftable, 'craftable': item.isCraftable}">
-        <div class="bg-collectible" :class="'bg-collectibles_'+itemId" @mouseenter="setHover(itemId, true)" @mouseleave="setHover(itemId, false)"></div>
-        <div class="recipes-modal" v-if="itemHoverStates[itemId]" v-once>
+      <div class="item" v-for="item in visibleItems"
+           v-bind:key="item.id"
+           :class="computeItemClass(item)"
+      >
+        <div class="bg-collectible" :class="'bg-collectibles_'+item.id" @mouseenter="setHover(item.id, true)" @mouseleave="setHover(item.id, false)"></div>
+        <div class="recipes-modal" v-if="itemHoverStates[item.id]" v-once>
           <div class="recipes-desc">
             <b>{{item.name}}</b><br/>
             <p style="font-size:0.6rem;padding:5px;">{{item.text}}</p>
           </div>
-          <div class="recipes-block" v-for="(recipe, recipeId) in getRecipesFromId(itemId)" v-bind:key="recipeId" v-bind:class="{ 'recipeCraftable':recipe.isCraftable}">
+          <div class="recipes-block" v-for="(recipe, recipeId) in getRecipesFromId(item.id)" v-bind:key="recipeId" v-bind:class="{ 'recipeCraftable':recipe.isCraftable}">
               <div class="recipe-block" v-for="(singleRecipe, singleRecipeId) in recipe" v-bind:key="singleRecipeId">
                 <div class="bg-pickup" :class="'bg-pickup-'+singleRecipe"></div>
               </div>
           </div>
-          <div v-if="!getRecipesFromId(itemId)">
+          <div v-if="!getRecipesFromId(item.id)">
             No recipe... yet?
           </div>
         </div>
@@ -48,6 +60,9 @@ export default {
   props: {
     msg: String,
   },
+  components: {
+    SelectComponent: () => import("./SelectComponent.vue")
+  },
   data() {
     return {
       items: require("../assets/items.json"),
@@ -58,7 +73,8 @@ export default {
       anyPickups: false,
       hideDisabled: false,
       pickups: new Array(25).fill(0),
-      itemHoverStates: [],
+      orderBy: null,
+      itemHoverStates: {},
       search: "",
       pickupDefinitions: [[
         { icon: "Red_Heart.png", index: 0 },
@@ -97,30 +113,80 @@ export default {
       ],
     };
   },
-  watch: {
-    pickups: {
-      deep: true,
-      handler() {
-        this.computeItems();
-      }
-    },
-  },
   computed: {
-    visibleItems() {
-      return Object.fromEntries(Object.entries(this.items).filter(item =>
-        !(this.hideDisabled && !item[1].isCraftable) && 
-        (!this.search || item[1].name.toLowerCase().includes(this.search.toLowerCase()))
-      ));
+    orderByItems() {
+      return [
+        {text: "Not selected", index: null},
+        ...this.pickupDefinitionsFlat
+      ]
+    },
+    pickupDefinitionsFlat() {
+      const array = [];
+      this.pickupDefinitions.forEach(chunk => array.push(...chunk));
+      return array;
+    },
+    visibleItems(){
+      const list = this.computedItems.filter(i => i.isVisible)
+      if (this.orderBy !== null) {
+        list.sort((first, second) => {
+          let firstIncludes = this.checkIfItemIncludesPickup(first);
+          let secondIncludes = this.checkIfItemIncludesPickup(second);
+
+          if (firstIncludes && !secondIncludes) {
+            return -1
+          } else if (!firstIncludes && secondIncludes) {
+            return 1
+          } else {
+            return 0;
+          }
+        })
+      }
+      return list;
+    },
+    computedItems() {
+      return this.recipes.map(item => {
+        let itemIsCraftable = false;
+
+        item.recipes.forEach(recipe => {
+          let recipeCraftable = this.checkIfRecipeDoable(recipe);
+          if(recipeCraftable) itemIsCraftable = true;
+          Object.assign(recipe, {isCraftable: recipeCraftable})
+        })
+
+
+        Object.assign(item, this.items[item.id])
+        const isVisible = !(this.hideDisabled && !itemIsCraftable) &&
+            (!this.search || item.name.toLowerCase().includes(this.search.toLowerCase()))
+
+        item.id = item.ID;
+        item.isCraftable = itemIsCraftable
+        item.isVisible = isVisible;
+        item.isPriorityOrder = this.checkIsPriorityOrder(item);
+
+        return item;
+      });
     }
   },
   methods: {
     clear() {
+      this.orderBy = null
       for (let i = 0; i < this.pickups.length; i++) {
         Vue.set(this.pickups, i, 0);
       }
     },
     setHover(itemId, state) {
-      Vue.set(this.itemHoverStates, itemId, state);
+      if(state) {
+        Vue.set(this.itemHoverStates, itemId, state);
+      } else {
+        Vue.delete(this.itemHoverStates, itemId);
+      }
+    },
+    computeItemClass(item){
+      return {
+        'disabled': this.anyPickups && !item.isCraftable,
+        'craftable': item.isCraftable,
+        "priority-order": item.isPriorityOrder
+      }
     },
     getIconFromPickupId(pickupId) {
       return `./bagicons/${pickupId}.png`;
@@ -130,31 +196,24 @@ export default {
       if (recipeItem) return recipeItem.recipes;
       else return null;
     },
-    computeItems() {
-      for (let recipeItems of this.recipes) {
-        let isCraftable = false;
-        let that = this;
-        if (recipeItems && recipeItems.recipes) {
-          for (let recipe of recipeItems.recipes) {
-            let recipeCraftable = this.checkIfRecipeDoable(recipe);
-
-            Vue.nextTick(function () {
-              Vue.set(recipe, "isCraftable", recipeCraftable);
-            });
-            if (!isCraftable) {
-              isCraftable = recipeCraftable;
-            }
-          }
-
-          Vue.nextTick(function () {
-            Vue.set(that.items[recipeItems["ID"]], "isCraftable", isCraftable);
-          });
-        }
-      }
-      this.anyPickups = !this.pickups.every(x => x == 0);
+    checkIsPriorityOrder(item) {
+      return this.orderBy !== null &&
+          item.recipes.findIndex(recipe => {
+            return recipe.isCraftable && recipe.includes((this.orderBy + 1).toString())
+          }) !== -1
     },
     checkIfRecipeDoable(recipe) {
       return this.pickups.every((count, index) => count >= this.countOccurences(recipe, index+1));
+    },
+    checkIfItemIncludesPickup(item) {
+      if (this.orderBy === null) return false;
+      let isIncludes = false;
+      item.recipes.filter(recipe => recipe.isCraftable).forEach(recipe => {
+        if(isIncludes) return;
+        if(recipe.includes((this.orderBy + 1).toString())) isIncludes = true;
+      })
+
+      return isIncludes;
     },
     countOccurences(array, value) {
       let num = 0;
@@ -168,8 +227,15 @@ export default {
 </script>
 
 <style scoped>
+.row {
+  display: flex;
+  flex-direction: row;
+}
 .item.disabled .item-img {
   opacity: 0.2;
+}
+.item.priority-order {
+  background-color: lightgreen;
 }
 
 .pickup {
