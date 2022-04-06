@@ -168,7 +168,7 @@ export default {
 </script>
 
 <style scoped>
-.item.disabled .item-img {
+.item.disabled .bg-collectible {
   opacity: 0.2;
 }
 

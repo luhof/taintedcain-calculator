@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <div id="version-warning">
+      WARNING : This calculator is only compatible with version &lt;1.7.5!<br/>
+      Newer versions cause recipes to be dependant to the seed.<br/>
+      IDK if I'll have time to update this calculator to take this into account, but meanwhile <a href="https://platinumgod.co.uk/bag-of-crafting/index.html" target="_blank">PlatinumGod's calculator</a> is supercool!
+    </div>
     <Calculator msg="Welcome to Your Vue.js App"/>
     <p style="margin : 30px; line-height:1.5rem;">
     Made by luhof (<a href="https://lucas.cool" target="_blank">Website</a> | <a href="https://twitter.com/luhof" target="_blank">Twitter</a>).<br/>
@@ -120,5 +125,16 @@ h1, h2, h3{
   font-size:4em;
   text-shadow: 2px 2px 0 #d3bba7
 }
+
+#version-warning{
+  background-color: red;
+  color: white;
+  text-shadow: 0 0 black;
+  line-height: 25px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 30%);
+  margin-bottom:32px;
+}
+    
 
 </style>
